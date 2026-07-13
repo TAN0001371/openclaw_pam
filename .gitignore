@@ -1,0 +1,6 @@
+*.gemini_key
+.gemini_key
+.gemini_key
+output/
+__pycache__/
+*.pyc

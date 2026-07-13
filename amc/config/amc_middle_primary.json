@@ -1,0 +1,56 @@
+{
+  "subject_id": "amc_middle_primary",
+  "subject_name": "AMC Middle Primary (Years 3-4)",
+  "display_name": "AMC Maths Practice",
+  "description": "Australian Mathematics Competition practice for Years 3-4 (Middle Primary Division). Original questions in the AMC style — arithmetic, patterns, logic, measurement, time, and problem solving.",
+  "icon": "🧮",
+  "difficulty_level": "middle_primary",
+  "year_levels": ["Year 3", "Year 4"],
+  "supported_question_types": ["multiple_choice", "short_answer"],
+  "answer_format": "All questions have a single correct answer: multiple choice (A-E) or a whole number (0-999).",
+  
+  "topics": [
+    {"id": "arithmetic", "name": "Arithmetic", "weight": 0.25},
+    {"id": "place_value", "name": "Place Value & Number Sense", "weight": 0.10},
+    {"id": "patterns", "name": "Patterns & Sequences", "weight": 0.10},
+    {"id": "time", "name": "Time & Calendars", "weight": 0.08},
+    {"id": "money", "name": "Money", "weight": 0.08},
+    {"id": "measurement", "name": "Measurement", "weight": 0.08},
+    {"id": "geometry", "name": "Geometry & Symmetry", "weight": 0.08},
+    {"id": "logic", "name": "Logic & Problem Solving", "weight": 0.12},
+    {"id": "combinatorics", "name": "Counting & Combinations", "weight": 0.06},
+    {"id": "word_problems", "name": "Word Problems", "weight": 0.05}
+  ],
+
+  "generation_modes": {
+    "quick_practice": {
+      "student_label": "Quick Practice",
+      "mode": "skills_check",
+      "question_count": {"min": 5, "max": 8},
+      "marks_per_question": 3,
+      "suggested_time_minutes": {"min": 5, "max": 10},
+      "description": "Short burst of AMC-style questions. Great for daily warm-up."
+    },
+    "topic_test": {
+      "student_label": "Topic Test",
+      "mode": "topic_test",
+      "question_count": {"min": 8, "max": 12},
+      "marks_distribution": "3 for easy, 4 for medium, 5 for harder",
+      "suggested_time_minutes": {"min": 12, "max": 20},
+      "description": "Focused practice on a specific topic area."
+    },
+    "full_paper": {
+      "student_label": "Full Paper",
+      "mode": "full_exam",
+      "question_count": {"min": 25, "max": 30},
+      "marks_distribution": "Q1-10: 3 marks, Q11-20: 4 marks, Q21-25: 5 marks, Q26-30: 6-10 marks",
+      "suggested_time_minutes": {"min": 60, "max": 75},
+      "description": "Full-length AMC practice paper in the real competition format."
+    }
+  },
+
+  "qa_score_threshold": 85,
+  "default_pack_type": "subject_content",
+  "media_guidance": "Minimal diagrams — most questions are text-only. Simple diagrams (shapes, number lines, grids) can be described in text or generated as simple SVGs.",
+  "feedback_guidance": "Keep explanations simple and concrete. Use worked examples. No algebra unless the question involves it. Aim for explanations a Year 3-4 student can follow."
+}
