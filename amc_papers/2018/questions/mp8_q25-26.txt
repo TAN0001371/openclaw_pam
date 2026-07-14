@@ -1,0 +1,16 @@
+MP 8
+
+25. Yasmin has a 20 cm × 20 cm square of paper that is coloured on one side. She folds over a strip along each edge to make a white square with an 8 cm × 8 cm coloured square inside. How far from each edge is each fold?
+
+[Diagram showing a 20 cm x 20 cm square being folded from all four sides to create an 8 cm x 8 cm square in the center.]
+
+(A) 8 cm (B) 6 cm (C) 4 cm (D) 3 cm (E) 1 cm
+
+For questions 26 to 30, shade the answer as a whole number from 0 to 999 in the space provided on the answer sheet.
+Questions 26–30 are worth 6, 7, 8, 9 and 10 marks, respectively.
+
+26. Four archers are having some target practice, each with two arrows.
+Ari hits regions A and C for a total of 15. Billy hits regions A and B for a total of 18. Charlie hits regions B and C for a total of 13.
+If Davy hits region B twice, what will his score be?
+
+[Diagram of a target with regions A, B, and C]
