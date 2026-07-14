@@ -1,0 +1,19 @@
+MP 7
+
+23. Warren drew two large squares that overlap to form the hexagon shown. The area of each small square is 1 square centimetre. What is the total area of the hexagon that Warren drew?
+(A) 12
+(B) 36
+(C) 48
+(D) 60
+(E) 72
+
+24. Beginning with a row of 20 coins, Anh takes the first coin, then every fourth coin after that.
+From the remaining coins, Brenda takes the first coin and every third coin after that.
+From the remaining coins, Chen takes the first coin and every second coin after that.
+Dimitris takes all the remaining coins.
+Does anyone get more coins than all the others?
+(A) Yes, Anh does
+(B) Yes, Brenda does
+(C) Yes, Chen does
+(D) Yes, Dimitris does
+(E) No, they all get the same number of coins
