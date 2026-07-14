@@ -1,0 +1,37 @@
+Here is the transcription of the text from the provided image:
+
+2018 AMC
+Middle Primary Solutions
+
+**21. Alternative 1**
+15 medium eggs weigh the same as 18 small eggs, and also the same as 10 large eggs.
+So 5 large eggs weigh the same as 9 small eggs,
+hence (D).
+
+**Alternative 2**
+Suppose the small egg weighs 50 g, so that six small eggs weigh 300 g.
+Then one medium egg weighs 60 g and six medium eggs weigh 360 g.
+Then one large egg weighs 90 g and five large eggs weigh 450 g.
+This is the same as 9 small eggs,
+hence (D).
+*Note: For any other weight of a small egg, the other weights would be different, but in the same proportions, leading to the same answer.*
+
+**22. (Also UP19)**
+From the first row, [apple icon] = 24 ÷ 4 = 6.
+Comparing the first two rows, [banana icon] = [apple icon] − 1 = 5.
+Comparing the first two columns, [circle icon] = [banana icon] − 2 = 3.
+Then [apple icon] + [circle icon] = 6 + 3 = 9,
+hence (B).
+
+**23. Alternative 1**
+The hexagon can be divided into pieces that can be rearranged as shown.
+(Image description: shows two large rectangular grids marked "24" and four small vertical rectangular strips marked "3").
+The total area is 2 × 24 + 4 × 3 = 60 square centimetres,
+hence (D).
+
+**Alternative 2**
+The hexagon is made of two trapeziums, each of area ½ × 6 × (6 + 4) = 30 cm².
+The total area is then 2 × 30 = 60 cm²,
+hence (D).
+
+37
