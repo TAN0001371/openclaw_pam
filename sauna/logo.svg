@@ -1,19 +1,89 @@
-<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
   <defs>
-    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#c48b4a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5e3c;stop-opacity:1" />
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a05a"/>
+      <stop offset="50%" stop-color="#c48b4a"/>
+      <stop offset="100%" stop-color="#8b5e3c"/>
     </linearGradient>
+    <linearGradient id="flameGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4a05a"/>
+      <stop offset="40%" stop-color="#c48b4a"/>
+      <stop offset="100%" stop-color="#7a4e2a"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c48b4a"/>
+      <stop offset="30%" stop-color="#d4a05a"/>
+      <stop offset="60%" stop-color="#8b5e3c"/>
+      <stop offset="100%" stop-color="#c48b4a"/>
+    </linearGradient>
+    <radialGradient id="heatGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#c48b4a" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#c48b4a" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <g transform="translate(60, 40)">
-    <path d="M40 0 C 65 0, 80 15, 80 40 L 80 80 C 80 105, 65 120, 40 120 C 15 120, 0 105, 0 80 L 0 40 C 0 15, 15 0, 40 0 Z" fill="none" stroke="url(#woodGradient)" stroke-width="3"/>
-    <path d="M20 30 L 60 30 M20 50 L 60 50 M20 70 L 60 70 M20 90 L 60 90" stroke="#8b5e3c" stroke-width="2" stroke-linecap="round"/>
-    <path d="M40 15 L 45 25 L 55 25 L 47 32 L 50 42 L 40 36 L 30 42 L 33 32 L 25 25 L 35 25 Z" fill="url(#woodGradient)"/>
-  </g>
+  <!-- Background -->
+  <rect width="600" height="400" fill="#1a1a1a" rx="4"/>
 
-  <g transform="translate(180, 80)">
-    <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="36" letter-spacing="4" fill="#ffffff">MELBOURNE PRESTIGE SAUNA</text>
-    <text x="0" y="40" font-family="Arial, sans-serif" font-weight="300" font-size="18" letter-spacing="6" fill="#c48b4a">CUSTOM CEDAR SAUNAS</text>
-  </g>
+  <!-- Subtle outer glow behind badge -->
+  <circle cx="155" cy="190" r="120" fill="url(#heatGlow)"/>
+
+  <!-- Badge: outer ring -->
+  <circle cx="155" cy="190" r="88" fill="none" stroke="url(#ringGrad)" stroke-width="1.2"/>
+  <!-- Badge: secondary ring -->
+  <circle cx="155" cy="190" r="84" fill="none" stroke="#c48b4a" stroke-width="0.5" opacity="0.4"/>
+  <!-- Badge: inner ring -->
+  <circle cx="155" cy="190" r="80" fill="none" stroke="#8b5e3c" stroke-width="0.5" opacity="0.3"/>
+  <!-- Badge: dark face -->
+  <circle cx="155" cy="190" r="79" fill="#141414"/>
+
+  <!-- Decorative compass dots at 12, 3, 6, 9 -->
+  <circle cx="155" cy="106" r="2.5" fill="#c48b4a" opacity="0.7"/>
+  <circle cx="155" cy="274" r="2.5" fill="#c48b4a" opacity="0.7"/>
+  <circle cx="71"  cy="190" r="2.5" fill="#c48b4a" opacity="0.7"/>
+  <circle cx="239" cy="190" r="2.5" fill="#c48b4a" opacity="0.7"/>
+
+  <!-- Decorative small ticks at diagonals -->
+  <circle cx="194" cy="117" r="1.2" fill="#8b5e3c" opacity="0.5"/>
+  <circle cx="116" cy="263" r="1.2" fill="#8b5e3c" opacity="0.5"/>
+  <circle cx="116" cy="117" r="1.2" fill="#8b5e3c" opacity="0.5"/>
+  <circle cx="194" cy="263" r="1.2" fill="#8b5e3c" opacity="0.5"/>
+
+  <!-- Geometric flame: central diamond (flame core) -->
+  <polygon points="155,132 133,175 155,198 177,175" fill="url(#flameGrad)" opacity="0.95"/>
+  <!-- Left faceted wing -->
+  <polygon points="133,175 115,195 133,212 155,198" fill="#a0703a" opacity="0.7"/>
+  <!-- Right faceted wing -->
+  <polygon points="177,175 195,195 177,212 155,198" fill="#a0703a" opacity="0.7"/>
+  <!-- Upper highlight facet -->
+  <polygon points="155,132 143,150 155,158 167,150" fill="#d4a05a" opacity="0.45"/>
+  <!-- Lower shadow facet -->
+  <polygon points="155,198 143,210 155,220 167,210" fill="#8b5e3c" opacity="0.45"/>
+
+  <!-- Flame crown tips -->
+  <polygon points="155,118 149,132 155,140 161,132" fill="#d4a05a" opacity="0.85"/>
+  <polygon points="140,128 135,138 143,150" fill="#c48b4a" opacity="0.35"/>
+  <polygon points="170,128 175,138 167,150" fill="#c48b4a" opacity="0.35"/>
+
+  <!-- Cedar grain lines behind flame -->
+  <line x1="155" y1="142" x2="155" y2="234" stroke="#c48b4a" stroke-width="0.4" opacity="0.15"/>
+  <line x1="140" y1="152" x2="140" y2="224" stroke="#c48b4a" stroke-width="0.3" opacity="0.10"/>
+  <line x1="170" y1="152" x2="170" y2="224" stroke="#c48b4a" stroke-width="0.3" opacity="0.10"/>
+  <line x1="125" y1="172" x2="125" y2="210" stroke="#c48b4a" stroke-width="0.3" opacity="0.08"/>
+  <line x1="185" y1="172" x2="185" y2="210" stroke="#c48b4a" stroke-width="0.3" opacity="0.08"/>
+
+  <!-- Vertical divider -->
+  <line x1="270" y1="130" x2="270" y2="250" stroke="#c48b4a" stroke-width="0.6" opacity="0.25"/>
+
+  <!-- TEXT: brand name -->
+  <text x="285" y="168" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="400" letter-spacing="6" fill="#8b5e3c">MELBOURNE PRESTIGE</text>
+
+  <!-- TEXT: main wordmark -->
+  <text x="285" y="218" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="2" fill="#f5f0e8">SAUNA</text>
+
+  <!-- Accent line -->
+  <line x1="285" y1="236" x2="440" y2="236" stroke="#c48b4a" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- TEXT: tagline -->
+  <text x="285" y="260" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" letter-spacing="4.5" fill="#c48b4a">CUSTOM CEDAR SAUNAS</text>
 </svg>
