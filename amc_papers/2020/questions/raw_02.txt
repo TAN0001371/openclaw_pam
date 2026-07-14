@@ -1,0 +1,28 @@
+2020 Australian Mathematics Competition - Middle Primary
+
+24. A primary school has 400 students and they each have one vote for a school captain. They voted for Jordan, Evie and Emily. Jordan got 3 times as many votes as Emily. Evie got 20 fewer votes than Jordan. How many votes did Evie get?
+(A) 20 
+(B) 60 
+(C) 100 
+(D) 140 
+(E) 160
+
+25. Karl likes to avoid walking on the cracks in the footpath by taking three equally spaced steps for every two blocks. Every third block of the footpath is darker than the others, as shown.
+
+[Diagram description: A horizontal strip representing a footpath is divided into rectangular blocks. Every third block is shaded dark grey, while the others are light grey. There are small black oval footprints marked on the blocks to show a walking pattern.]
+
+In his first 100 steps, how many times does Karl's left foot step on a darker block?
+(A) 11 
+(B) 16 
+(C) 21 
+(D) 25 
+(E) 33
+
+For questions 26 to 30, shade the answer as a whole number from 0 to 999 in the space provided on the answer sheet.
+Questions 26–30 are worth 6, 7, 8, 9 and 10 marks, respectively.
+
+26. Janine thinks of three numbers.
+Between them, they use the digits 1, 3, 5, 6, 7, 8 and 9, with each digit being used exactly once.
+The second number is 2 times the first number.
+The third number is 4 times the first number.
+What is the third number?

@@ -1,0 +1,22 @@
+Based on the image provided, here is the transcription of the handwritten notes. Note that there are no multiple-choice options (A-E) or page numbers visible on this specific sheet.
+
+---
+
+**Q.11**
+[Diagram: Three overlapping circles. Top circle contains [6]. Left circle contains 4, 1, 5, 3. Right circle contains 2, 1, 3, 7. The center intersection contains 1. The left intersection contains 3. The top intersection contains 2. The left-most intersection contains 4.]
+hence (E)
+Pink circle: 5 + 3 + 1 + [4] = 13
+Blue circle: 3 + 7 + 1 + [2] = 13
+So Orange circle: 1 + [4] + [2] + [6] = 13
+
+**Q.12**
+(8-5) x 5 -> [15] -> It's less than 100
+(15-5) x 5 -> [50] -> It's less than 100
+(50-5) x 5 -> [225] -> Greater than 100 -> Yes -> (225)
+Hence (D)
+
+**Q.13**
+[Diagram: A number line starting at 0 and ending at 2, with marked points: A, B, C, (1), D, E.]
+Hence (B)
+(1) will be in middle of 2 & 0
+and 1/2 will be middle of 1 & 0

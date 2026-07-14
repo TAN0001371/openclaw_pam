@@ -1,0 +1,27 @@
+2020 Australian Mathematics Competition — Middle Primary
+
+19. Aidan puts a range of 3D shapes on his desk at school. This is the view from his side of the desk:
+
+[Diagram description: A trapezoidal desk surface is shown from an elevated perspective. On the surface are four shapes: 
+- A cube in the bottom-left.
+- A triangular prism (a tent shape) behind the cube.
+- A square-based pyramid behind the cube and to the right.
+- A smaller triangular prism (wedge shape) on the right side.
+]
+
+Nadia is sitting on the opposite side of the desk facing Aidan. Which of the following diagrams best represents the view from Nadia's side of the desk?
+
+(A) [Diagram description: The cube is on the right, and the three other shapes have shifted relative to each other to reflect a 180-degree view.]
+(B) [Diagram description: The cube is on the right, and the three other shapes have shifted relative to each other to reflect a 180-degree view.]
+(C) [Diagram description: The cube is on the right, and the three other shapes have shifted relative to each other to reflect a 180-degree view.]
+(D) [Diagram description: The cube is on the right, and the three other shapes have shifted relative to each other to reflect a 180-degree view.]
+(E) [Diagram description: The cube is on the right, and the three other shapes have shifted relative to each other to reflect a 180-degree view.]
+
+***
+
+20. I have five 50c coins, five $1 coins and five $2 coins. In how many different ways can I make up $5?
+(A) 4
+(B) 6
+(C) 8
+(D) 10
+(E) 12

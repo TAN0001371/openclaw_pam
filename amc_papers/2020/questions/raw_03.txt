@@ -1,0 +1,22 @@
+Questions 21 to 25, 5 marks each
+
+21. After the first kilometre of the school cross-country run, Petra was second last.
+In the next kilometre she managed to overtake seven runners.
+In the third kilometre, two runners overtook her. In the final kilometre, she passed eight runners, but four other runners overtook her.
+She finished ninth.
+How many were in the race?
+(A) 15 (B) 18 (C) 19 (D) 20 (E) 21
+
+22. I fold up this net to make a cube.
+I then multiply the numbers on opposite faces to get three numbers.
+The largest of these is
+(A) 12 (B) 15 (C) 18 (D) 24 (E) 30
+
+[Diagram description for Question 22: A flat net of a cube consisting of six squares. The layout is: a column of two squares with 1 and 6, with a middle square of 2 attached to the right of the 6-square. Attached to the right of the 2-square is a column of two squares with 3 and 4, with a 5-square attached to the left of the 3-square.]
+
+23. Emanuel works in a busy restaurant washing dishes. Each dirty plate from the stack on the left takes 1 minute to wash and dry, before being placed on top of the clean stack on the right. After 7 minutes, and every 7 minutes from then on, a waiter brings 4 more dirty plates and adds them to the top of the dirty stack.
+
+[Diagram description for Question 23: Two stacks of white plates. The left stack is tall and labeled "15 dirty plates", with a darker coloured plate inserted near the bottom of the stack. The right stack is shorter and labeled "3 clean plates".]
+
+How high is the stack of clean plates when the coloured plate is being washed?
+(A) 14 (B) 16 (C) 18 (D) 20 (E) 22

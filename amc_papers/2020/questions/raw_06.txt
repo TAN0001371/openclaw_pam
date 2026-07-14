@@ -1,0 +1,31 @@
+The text and descriptions from the page are transcribed below:
+
+**Header:**
+Middle Primary
+2020 Australian Mathematics Competition
+
+***
+
+**Question 17**
+17. Jake is building a $3 \times 3 \times 3$ cube using small wooden cubes. The diagram shows where he is up to. 
+How many more small cubes does he need to complete his $3 \times 3 \times 3$ cube?
+
+*   **Diagram:** A partial construction of a $3 \times 3 \times 3$ cube made of smaller unit cubes.
+*   (A) 5
+*   (B) 6
+*   (C) 7
+*   (D) 8
+*   (E) 9
+
+***
+
+**Question 18**
+18. Juanita started with a square of paper, made some folds in it, then punched a single hole through all layers. 
+The diagram shows what it looked like after she unfolded it and flattened it back out. What was the pattern of folds she made?
+
+*   **Diagram (Top Right):** A square piece of paper showing 8 circular holes arranged in a circle near the center.
+*   **(A):** A square with diagonal folds (forming an 'X') and a horizontal line through the middle. There is an asterisk at the center.
+*   **(B):** A square with a single diagonal line from top-left to bottom-right and another from top-right to bottom-left (forming an 'X').
+*   **(C):** A square with one vertical dashed line and one horizontal dashed line through the center (a plus sign).
+*   **(D):** A square divided into a $3 \times 3$ grid by dashed lines.
+*   **(E):** A square with a horizontal dashed line through the center and two diagonal lines (forming a shape like a starburst or asterisk symbol).

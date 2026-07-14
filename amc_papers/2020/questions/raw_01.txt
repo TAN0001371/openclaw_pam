@@ -1,0 +1,33 @@
+Here is the transcription of the page:
+
+**[Top right corner: "dle Primary" - likely Middle Primary]**
+
+**27.** In the following diagram, you enter at the square labelled entry and exit at the square labelled exit. You can move horizontally and vertically along the white squares, but must stay off the coloured squares. Each square can only be visited once.
+By moving this way and adding the numbers in the squares you pass through, what is the highest sum you can get?
+
+**[Diagram for 27:]**
+A 5x6 grid containing numbers in some squares and some colored (shaded) squares.
+*   The grid layout with numbers (reading row by row, left to right):
+    *   Row 1: 60, 50, [empty/shaded], 50, 55
+    *   Row 2: 50, 45, 150, [empty/shaded], [empty/shaded]
+    *   Row 3: [empty/shaded], [empty/shaded], [empty/shaded], 50, 50
+    *   Row 4: 55, 55, 60, 25, 55
+    *   Row 5: 70, [empty/shaded], 30, [empty/shaded], [empty/shaded]
+*   There is an "entry" arrow pointing into the bottom right corner.
+*   There is an "exit" arrow pointing out of the bottom row (second square from left).
+
+**28.** A bale of hay can be eaten by a horse in 2 days, by a cow in 3 days and by a sheep in 12 days. A farmer has 22 bales of hay and one horse, one cow and one sheep to feed. How many days will his bales last?
+
+**29.** A number is oddtastic if all of its digits are odd.
+For example, 9, 57 and 313 are oddtastic.
+However, 50 and 787 are not oddtastic, since 0 and 8 are even digits.
+How many of the numbers from 1 to 999 are oddtastic?
+
+**30.** Oliver used small cubes to build a set of solid shapes as shown.
+In the first shape, he used 1 cube; in the second shape, he used 6 cubes; in the third shape, he used 19 cubes.
+How many cubes did Oliver use to build his fifth shape?
+
+**[Diagram for 30:]**
+*   Shape 1: A single cube.
+*   Shape 2: A base of 5 cubes with 1 on top (total 6).
+*   Shape 3: A wider base structure of stacked cubes forming a pyramid-like shape.
