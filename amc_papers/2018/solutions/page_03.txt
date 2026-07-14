@@ -1,0 +1,38 @@
+Here is the transcription of the provided page from the AMC Middle Primary (Years 3-4) past paper:
+
+***
+
+[Top Header]
+Solutions
+
+**13. Alternative 1**
+Working backwards:
+* 2nd floor, up 7 floors to 9th floor
+* 9th floor, down 6 floors to 3rd floor
+* 3rd floor, up 5 floors to 8th floor
+So Shelley must have started on the 8th floor, **hence (E).**
+
+**Alternative 2**
+Shelley's total lift travel is 6 floors up and 12 floors down, a net travel of 6 floors down.
+Since she ended on the 2nd floor, she must have started on the 8th floor, **hence (E).**
+
+**14. (Also UP9)**
+The points for Zac and Bill are lower than Pat’s, so their calls cost less.
+Since the point for Bill is to the right, his call is longer and cheaper than Pat’s, **hence (B).**
+
+**15. (Also UP12)**
+There are 20 squares in the pattern. Since there are no overlaps, shape (C), with 6 squares, can't be the answer.
+Shape (E) can't be the answer, since the the leftmost and rightmost squares can't be covered by this pattern.
+Shapes (B) and (D) can be ruled out by trying to cover the area without overlap, as shown below.
+
+[Diagram description: Three rectangular boxes labeled (A), (B), and (D). Each contains a graphic representation of a "plus" sign or cross-shaped structure made of square units. These diagrams are used to illustrate visual exclusion.]
+
+This leaves only (A), which can be done as shown, **hence (A).**
+
+**16. For KAREN, 5 letters are needed.**
+For WARREN, set aside the K, and another two letters are needed: W and R.
+For ANDREW, set aside one R, and other letter is needed: D.
+In all the smallest possible set of letters is A, D, E, K, N, R, R, W, **hence (C).**
+
+[Page Footer]
+35

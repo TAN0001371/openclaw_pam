@@ -1,0 +1,39 @@
+MP 3
+
+**Class 3P: Favourite Pets**
+[Diagram: A bar graph showing the number of children (y-axis from 0 to 15) vs type of pet (x-axis). The bars for fish, dogs, and rabbits are drawn, but the bar for "cats" is missing.]
+
+9. The children in class 3P voted on their favourite pets. Sally recorded the results in a column graph but forgot to draw in the column for cats.
+There are 29 children in the class and everyone voted once.
+How many children voted for cats?
+(A) 5
+(B) 6
+(C) 7
+(D) 8
+(E) 9
+
+10. Which of the following is a whole?
+(A) 1 half plus 2 quarters
+(B) 2 quarters plus 2 halves
+(C) 3 quarters plus 1 half
+(D) 1 half plus 1 quarter
+(E) 4 quarters plus 1 half
+
+---
+**Questions 11 to 20, 4 marks each**
+
+11. Mrs Chapman put 58 books back on the library shelves. She put 12 books on each shelf except the last shelf. How many books did she put on the last shelf?
+(A) 7
+(B) 8
+(C) 9
+(D) 10
+(E) 11
+
+12. This solid cube is built from small cubes.
+How many small cubes cannot be seen from this view?
+[Diagram: An isometric drawing of a 3x3x3 block structure. The structure appears to be a 3x3x3 cube with some small cubes missing from the front/top-right corner to create an L-shaped cutout.]
+(A) 6
+(B) 8
+(C) 9
+(D) 10
+(E) 11

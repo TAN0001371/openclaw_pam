@@ -1,0 +1,39 @@
+2018 AMC
+Middle Primary Solutions
+
+**17.** Slicing each pizza into thirds, there are 12 slices. Each person gets 2 slices, so there are 6 people,
+hence (B).
+
+**18.** (Also UP13)
+The clock needs to show after 11.30 [Diagram: A small analog clock face showing 11:30] and before 12.30 [Diagram: A small analog clock face showing 12:30]
+Of the clock faces (A)–(E) shown, only (A) is between these,
+hence (A).
+
+**19.** *Alternative 1*
+The hidden faces on each of the 3 dice can be added:
+2 + 3 + 6 = 11
+1 + 3 + 4 + 5 = 13
+2 + 4 + 5 + 6 = 17
+Total: 41
+hence (C).
+
+*Alternative 2*
+On three standard dice, there are (1 + 2 + 3 + 4 + 5 + 6) × 3 = 63 dots.
+In the diagram 22 dots are showing, so 63 − 22 = 41 dots are hidden,
+hence (C).
+
+**20.** (Also UP17)
+Any triangle must have the numbers 1, 2 and 3, for a total of 6.
+As the first diagram shows, the total is at least 14. Also, 14 is only possible with 1 on the left and the right.
+
+[Diagram 1: A diamond shape made of four small triangles. The top circle has a 6, the bottom circle has a 6, the left circle has "1, 2 or 3", and the right circle has "1, 2 or 3". Two middle circles are also present.]
+
+[Diagram 2: A diamond shape made of four small triangles. The top circle has "1, 2 or 3", the bottom circle has "1, 2 or 3", the left circle has a 6, and the right circle has a 6.]
+
+[Diagram 3: A diamond shape made of four small triangles. Top circle = 1, bottom circle = 1, left circle = 3, right circle = 1. The two middle circles are numbered 2 and 2.]
+
+Similarly, the second diagram shows that 14 is only possible with 1 in the top and bottom circles.
+Trying 1 in all four outer circles leads to the third diagram, with total 14,
+hence (C).
+
+36

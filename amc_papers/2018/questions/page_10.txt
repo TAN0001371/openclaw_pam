@@ -1,0 +1,34 @@
+**MP 4**
+
+**13.** Shelley walked into a lift. 
+She went down 5 floors, up 6 floors, then down 7 floors. She was then on the second floor. 
+On which level did she enter the lift?
+(A) 1st floor 
+(B) 2nd floor 
+(C) 3rd floor 
+(D) 6th floor 
+(E) 8th floor
+
+[Diagram description: A simple line drawing of an elevator door panel with a small square button labeled with an '8', and up/down arrow buttons.]
+
+**14.** Six friends each make a phone call to another city.
+The cost of each call depends on the time taken for the call as well as the distance.
+From this diagram decide whose phone call lasts longer than Pat's, but costs less.
+
+[Diagram description: A scatter plot graph. The vertical axis is labeled "Cost of call" (20c, 40c, 60c, 80c) and the horizontal axis is labeled "Time (minutes)" (3, 6, 9, 12, 15). Dots are plotted and labeled for names: Al (highest cost, around 12 mins), Jo (high cost, around 10 mins), Pat (mid cost, around 7 mins), Mia (mid-low cost, around 8 mins), Zac (low cost, around 4 mins), and Bill (lowest cost, around 13 mins).]
+
+(A) Al 
+(B) Bill 
+(C) Jo 
+(D) Mia 
+(E) Zac
+
+**15.** One of these shapes made of squares has been flipped and turned to make the following pattern, without any overlaps. Which one?
+
+[Diagram description: A central pattern composed of a 3x3 grid of squares with an additional square attached to the middle of each of the four sides (forming a cross-like shape). Around this, there are five options labeled A, B, C, D, and E. Each option consists of a shape made of a few squares attached in different configurations.]
+
+(A) [A shape composed of 3 squares in an 'L' formation]
+(B) [A shape composed of 4 squares in a straight line]
+(C) [A shape composed of 4 squares in a 2x2 block]
+(D) [A shape composed of 4 squares in a 'T' formation]
+(E) [A shape composed of 3 squares in a straight line]

@@ -1,0 +1,18 @@
+[PARAPHRASED] Here is the extracted and paraphrased mathematical content from the page:
+
+### Question 10
+*   **Problem:** Identify which sum of fractions among the five options (A through E) is equivalent to exactly one whole.
+*   **Methodology:** Convert all fractions into "quarters" (fourths). For example, 1/2 is equal to 2/4. By summing the parts in each option, the correct choice is the one that totals 4/4.
+*   **Answer:** (A)
+
+### Question 11
+*   **Problem:** A person has 58 books and wants to arrange them on shelves that hold 12 books each. How many books will be on the final (fifth) shelf?
+*   **Methodology:** Since 60 books would fill 5 shelves completely, having 2 fewer books (58) means the last shelf is missing 2 books. Therefore, 12 minus 2 leaves 10 books on the final shelf. Alternatively, perform the division 58 ÷ 12, which results in 4 full shelves and a remainder of 10.
+*   **Answer:** (D)
+
+### Question 12
+*   **Problem:** Given a larger cube structure made of 3 × 3 × 3 smaller cubes, how many of the smaller cubes are hidden from view?
+*   **Methodology:**
+    *   **Approach 1:** Calculate the total volume (27 cubes). Subtract the visible cubes: 9 on the top layer, 5 in the middle, and 5 on the bottom (totaling 19 visible). 27 – 19 = 8 hidden cubes.
+    *   **Approach 2:** Visualize the hidden cubes as a smaller interior block. The hidden section forms a 2 × 2 × 2 cube, resulting in 8 internal cubes.
+*   **Answer:** (B)

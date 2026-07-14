@@ -1,0 +1,30 @@
+MP 2
+
+6. Which one of these numbers is closest to 208?
+(A) 190
+(B) 200
+(C) 205
+(D) 210
+(E) 218
+
+7. Kate made this necklace from alphabet beads.
+[Diagram: The word "KATE" written in large capital letters.]
+
+She put it on the wrong way around, showing the back of the beads. What does this look like?
+
+(A) [Diagram: A reflection/mirror image of KATE, showing "ETAK" in a specific font style]
+(B) [Diagram: A vertical flip of the word KATE]
+(C) [Diagram: "ETAK" in a standard sans-serif font]
+(D) [Diagram: "KVIE" in a distorted font]
+(E) [Diagram: "ETAX" in a distorted font]
+
+8. Each day, tours of Parliament House and the National Museum begin at 8.30 am. The tours for Parliament House leave every 15 minutes and the tours for the National Museum leave every 20 minutes.
+How often do the tours leave at the same time?
+
+[Diagram: Two small clock faces showing 8.30. The top one is labeled "parliament house" and "first tour", with text "every 15 minutes". The bottom one is labeled "national museum" and "first tour", with text "every 20 minutes".]
+
+(A) every 5 minutes
+(B) every 15 minutes
+(C) every 30 minutes
+(D) every 45 minutes
+(E) every 60 minutes

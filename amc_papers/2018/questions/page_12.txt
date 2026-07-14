@@ -1,0 +1,37 @@
+MP 6
+
+19. Three standard dice are sitting next to each other as shown in the diagram. There are 7 faces visible. How many dots are hidden on the other 11 sides?
+(A) 26
+(B) 36
+(C) 41
+(D) 54
+(E) 63
+[Diagram: Three standard dice stacked in a pyramid shape: two on the bottom, one on top. The visible faces show 5, 6, and 4 dots.]
+
+20. The numbers from 1 to 3 are entered into the circles in the grid shown. Two circles joined by a line may not contain the same number.
+There are several ways of doing this. What is the smallest possible total of the eight numbers?
+(A) 10
+(B) 12
+(C) 14
+(D) 15
+(E) 16
+[Diagram: A grid of 8 circles connected by lines: a top row of two circles, a middle row of four circles, and a bottom row of two circles.]
+
+Questions 21 to 25, 5 marks each
+
+21. Six small eggs weigh the same as five medium eggs. Six medium eggs weigh the same as four large eggs. How many small eggs would weigh the same as five large eggs?
+(A) 5
+(B) 6
+(C) 8
+(D) 9
+(E) 12
+
+22. Pictures of fruit have been placed in this grid to represent numbers less than 10.
+The totals for each row and column are shown.
+What is the total value of an apple and an orange?
+(A) 8
+(B) 9
+(C) 10
+(D) 11
+(E) 12
+[Diagram: A 4x4 grid of images of pears, bananas, and apples. The row totals are 21, 19, 18, 22. The column totals are 16, 18, 22, 24.]
