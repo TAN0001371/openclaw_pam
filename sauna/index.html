@@ -92,6 +92,27 @@
     }
 
     /* ============================================================
+       SCROLL REVEAL (Intersection Observer)
+       ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Stagger delays */
+    .reveal-d1 { transition-delay: 0.05s; }
+    .reveal-d2 { transition-delay: 0.1s; }
+    .reveal-d3 { transition-delay: 0.15s; }
+    .reveal-d4 { transition-delay: 0.2s; }
+    .reveal-d5 { transition-delay: 0.25s; }
+    .reveal-d6 { transition-delay: 0.3s; }
+
+    /* ============================================================
        NAVIGATION
        ============================================================ */
     .nav {
@@ -104,7 +125,6 @@
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(196, 139, 74, 0.15);
-      transition: background var(--transition);
     }
 
     .nav-inner {
@@ -164,6 +184,7 @@
       gap: 5px;
       cursor: pointer;
       padding: 4px;
+      z-index: 1001;
     }
     .nav-hamburger span {
       display: block;
@@ -185,14 +206,15 @@
       text-align: center;
       position: relative;
       background:
-        radial-gradient(ellipse at 50% 0%, rgba(196, 139, 74, 0.08) 0%, transparent 60%),
-        radial-gradient(ellipse at 85% 80%, rgba(196, 139, 74, 0.04) 0%, transparent 50%),
-        var(--color-deep);
+        linear-gradient(180deg, rgba(20,20,20,0.5) 0%, rgba(20,20,20,0.7) 60%, rgba(20,20,20,0.92) 100%),
+        url('img/b0331afd-5b38-423c-a6d3-afad353a8f90.jpg') center/cover no-repeat;
       padding: 120px 2rem 4rem;
     }
 
     .hero-content {
       max-width: 800px;
+      position: relative;
+      z-index: 1;
     }
 
     .hero-badge {
@@ -265,14 +287,16 @@
       left: 50%;
       transform: translateX(-50%);
       animation: float 2.5s ease-in-out infinite;
+      z-index: 1;
     }
     .hero-scroll span {
       display: block;
       width: 24px;
       height: 40px;
-      border: 2px solid var(--color-cream-dim);
+      border: 2px solid var(--color-cream);
       border-radius: 12px;
       position: relative;
+      opacity: 0.7;
     }
     .hero-scroll span::after {
       content: '';
@@ -348,10 +372,10 @@
       color: var(--color-cream);
     }
     .about-features li::before {
-      content: '✦';
+      content: '\2726';
       color: var(--color-wood);
-      font-size: 0.75rem;
-      margin-top: 0.3rem;
+      font-size: 0.7rem;
+      margin-top: 0.35rem;
       flex-shrink: 0;
     }
 
@@ -359,16 +383,13 @@
       position: relative;
       border-radius: var(--radius);
       overflow: hidden;
-      background: var(--color-charcoal);
-      border: 1px solid var(--color-border);
       aspect-ratio: 4 / 3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     }
     .about-visual img {
-      width: 70%;
-      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     /* ============================================================
@@ -469,42 +490,119 @@
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-bottom: 2rem;
+      gap: 1.25rem;
     }
+
     .gallery-item {
-      aspect-ratio: 4 / 3;
-      background: var(--color-charcoal-light);
-      border: 1px solid var(--color-border);
+      position: relative;
       border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      aspect-ratio: 4 / 3;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-item-tall {
+      grid-row: span 2;
+      aspect-ratio: auto;
+    }
+
+    /* ============================================================
+       CSS-ONLY LIGHTBOX (:target)
+       ============================================================ */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.94);
+      z-index: 2000;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
-      transition: border-color var(--transition);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
     }
-    .gallery-item:hover {
-      border-color: var(--color-wood);
+    .lightbox:target {
+      opacity: 1;
+      pointer-events: all;
     }
-    .gallery-item img {
-      width: 50%;
-      opacity: 0.35;
-      transition: opacity var(--transition);
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: var(--radius);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
     }
-    .gallery-item:hover img {
-      opacity: 0.5;
+    .lightbox-close {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: var(--color-cream);
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background var(--transition);
+      line-height: 1;
+      text-decoration: none;
     }
-
-    .gallery-note {
+    .lightbox-close:hover {
+      background: rgba(255, 255, 255, 0.18);
+      color: var(--color-white);
+    }
+    .lightbox-caption {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--color-cream-muted);
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
       text-align: center;
-      color: var(--color-cream-dim);
-      font-size: 0.9rem;
-      font-style: italic;
     }
-
-    .gallery-featured {
-      grid-column: span 2;
-      grid-row: span 2;
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: var(--color-cream);
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background var(--transition);
+      text-decoration: none;
+      line-height: 1;
+    }
+    .lightbox-nav:hover {
+      background: rgba(255, 255, 255, 0.16);
+    }
+    .lightbox-prev {
+      left: 2rem;
+    }
+    .lightbox-next {
+      right: 2rem;
     }
 
     /* ============================================================
@@ -628,13 +726,15 @@
       right: 2rem;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 1.3rem;
+      font-size: 1.4rem;
+      font-weight: 300;
       color: var(--color-wood);
       transition: transform var(--transition);
-      font-weight: 300;
     }
     .faq-item input {
-      display: none;
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
     }
     .faq-item input:checked ~ .faq-question {
       color: var(--color-wood);
@@ -653,7 +753,7 @@
       line-height: 1.8;
     }
     .faq-item input:checked ~ .faq-answer {
-      max-height: 300px;
+      max-height: 400px;
     }
 
     /* ============================================================
@@ -804,31 +904,6 @@
     }
 
     /* ============================================================
-       ANIMATIONS
-       ============================================================ */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .fade-in {
-      animation: fadeInUp 0.8s ease forwards;
-      opacity: 0;
-    }
-    .fade-in:nth-child(1) { animation-delay: 0.1s; }
-    .fade-in:nth-child(2) { animation-delay: 0.2s; }
-    .fade-in:nth-child(3) { animation-delay: 0.3s; }
-    .fade-in:nth-child(4) { animation-delay: 0.4s; }
-    .fade-in:nth-child(5) { animation-delay: 0.5s; }
-    .fade-in:nth-child(6) { animation-delay: 0.6s; }
-
-    /* ============================================================
        RESPONSIVE — 768px
        ============================================================ */
     @media (max-width: 768px) {
@@ -841,7 +916,7 @@
         top: 72px;
         left: 0;
         right: 0;
-        background: rgba(20, 20, 20, 0.97);
+        background: rgba(20, 20, 20, 0.98);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         flex-direction: column;
@@ -852,6 +927,7 @@
         transform: translateY(-120%);
         opacity: 0;
         transition: transform 0.35s ease, opacity 0.35s ease;
+        pointer-events: none;
       }
       .nav-links a {
         display: block;
@@ -863,6 +939,7 @@
       .nav-toggle:checked ~ .nav-links {
         transform: translateY(0);
         opacity: 1;
+        pointer-events: all;
       }
       .nav-toggle:checked ~ .nav-hamburger span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
@@ -889,9 +966,9 @@
       .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-      .gallery-featured {
-        grid-column: span 1;
+      .gallery-item-tall {
         grid-row: span 1;
+        aspect-ratio: 4 / 3;
       }
 
       .pricing-points {
@@ -907,6 +984,14 @@
       .form-row {
         grid-template-columns: 1fr;
       }
+
+      .lightbox-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+      }
+      .lightbox-prev { left: 0.75rem; }
+      .lightbox-next { right: 0.75rem; }
     }
 
     /* ============================================================
@@ -943,6 +1028,9 @@
         font-size: 0.95rem;
         padding-right: 3rem;
       }
+      .faq-question::after {
+        right: 1.5rem;
+      }
       .faq-answer-inner {
         padding: 0 1.5rem 1.25rem;
       }
@@ -966,10 +1054,10 @@
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo" aria-label="Melbourne Prestige Sauna — Home">
-        <img src="logo.svg" alt="Melbourne Prestige Sauna logo">
+        <img src="logo.svg" alt="Melbourne Prestige Sauna">
       </a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
-      <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation menu" tabindex="0" role="button">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
         <span></span><span></span><span></span>
       </label>
       <ul class="nav-links">
@@ -988,13 +1076,13 @@
        ============================================================ -->
   <section id="hero" class="hero">
     <div class="hero-content">
-      <div class="hero-badge fade-in">Premium Custom Builds</div>
-      <h1 class="fade-in">Custom Cedar Saunas.<br><em>Built Your Way.</em></h1>
-      <p class="fade-in">
-        Every Melbourne Prestige Sauna is designed and hand-built from scratch — never a kit,
-        never a template. Yours will be the only one of its kind.
+      <div class="hero-badge">Premium Custom Builds</div>
+      <h1>Custom Cedar Saunas.<br><em>Built Your Way.</em></h1>
+      <p>
+        Melbourne Prestige Sauna. 100% bespoke. Never a kit. We design and hand-build
+        every sauna from scratch — your space, your vision, your sauna.
       </p>
-      <a href="#contact" class="btn btn-primary fade-in">Get a Quote</a>
+      <a href="#contact" class="btn btn-primary">Get a Quote</a>
     </div>
     <a href="#about" class="hero-scroll" aria-label="Scroll to learn more">
       <span></span>
@@ -1008,32 +1096,32 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-text">
-          <span class="section-label">About</span>
-          <h2>Not a Kit.<br>Never Will Be.</h2>
-          <p>
+          <span class="section-label reveal">About</span>
+          <h2 class="reveal">Not a Kit.<br>Never Will Be.</h2>
+          <p class="reveal">
             Walk into a hardware store, and you'll find sauna kits. Flat-packed. Made overseas.
             Generic. That's not what we do.
           </p>
-          <p>
+          <p class="reveal">
             Every <span class="highlight">Melbourne Prestige Sauna</span> is handmade right here in Victoria
             using premium <span class="highlight">western red cedar</span> — selected for its natural resistance
             to moisture, its intoxicating aroma, and its unmistakable warmth. No particle board. No
             shortcuts. No two builds are the same, because no two clients are the same.
           </p>
-          <p>
+          <p class="reveal">
             We sit down with you. We measure your space. We design every detail — from timber grade
             and bench height to lighting placement and door hardware. Then we build it. By hand. On site.
             Your sauna, your way.
           </p>
-          <ul class="about-features">
+          <ul class="about-features reveal">
             <li>Premium Canadian western red cedar — clear grade, kiln-dried</li>
             <li>Hand-built in Melbourne by a dedicated craftsman, not a production line</li>
             <li>Every dimension, every fixture, every finish — your choice</li>
             <li>Designed for Australian conditions and built to last decades</li>
           </ul>
         </div>
-        <div class="about-visual fade-in">
-          <img src="logo.svg" alt="Melbourne Prestige Sauna logo mark">
+        <div class="about-visual reveal reveal-d1">
+          <img src="img/a8e67e63-db67-48ee-8e63-55da82156a89.jpg" alt="Interior of a Melbourne Prestige cedar sauna showing warm timber tones and bench seating">
         </div>
       </div>
     </div>
@@ -1045,40 +1133,40 @@
   <section id="services" class="services">
     <div class="container">
       <div class="services-header">
-        <span class="section-label">What We Build</span>
-        <h2>Everything You Need. Nothing You Don't.</h2>
-        <p>
+        <span class="section-label reveal">What We Build</span>
+        <h2 class="reveal">Everything You Need. Nothing You Don't.</h2>
+        <p class="reveal">
           A Melbourne Prestige Sauna isn't just a hot room. It's a complete wellness space,
           designed around how you'll actually use it.
         </p>
       </div>
       <div class="services-grid">
-        <div class="service-card fade-in">
+        <div class="service-card reveal reveal-d1">
           <div class="service-icon">🪵</div>
           <h3>Outdoor Cedar Saunas</h3>
           <p>Freestanding structures from intimate two-person retreats to family-sized sanctuaries. Built to weather Victoria's climate beautifully.</p>
         </div>
-        <div class="service-card fade-in">
+        <div class="service-card reveal reveal-d2">
           <div class="service-icon">🔥</div>
           <h3>Wood‑Fire Heating</h3>
           <p>Nothing compares to the soft, deep heat of a genuine wood-fired sauna stove. We source premium Finnish and Australian-made heaters.</p>
         </div>
-        <div class="service-card fade-in">
+        <div class="service-card reveal reveal-d3">
           <div class="service-icon">🚿</div>
           <h3>Outdoor Showers</h3>
           <p>Hot and cold outdoor showers integrated into your sauna build. The perfect cool-down between rounds, right where you need it.</p>
         </div>
-        <div class="service-card fade-in">
+        <div class="service-card reveal reveal-d4">
           <div class="service-icon">🍵</div>
           <h3>Kitchenettes</h3>
           <p>Built-in tea stations, bar fridges, and prep surfaces so your sauna becomes a destination — not just a room you visit.</p>
         </div>
-        <div class="service-card fade-in">
+        <div class="service-card reveal reveal-d5">
           <div class="service-icon">💡</div>
           <h3>LED Lighting</h3>
           <p>Dimmable, colour-adjustable LED systems — from warm amber washes to chromotherapy setups. All rated for high-heat environments.</p>
         </div>
-        <div class="service-card fade-in">
+        <div class="service-card reveal reveal-d6">
           <div class="service-icon">🎨</div>
           <h3>Custom Finishes</h3>
           <p>Timber stains, exterior colours, etched glass, branded details — every surface reflects your taste. Your sauna, your signature.</p>
@@ -1093,66 +1181,101 @@
   <section id="gallery" class="gallery">
     <div class="container">
       <div class="gallery-header">
-        <span class="section-label">Gallery</span>
-        <h2>See the Difference.</h2>
-        <p>Every build is unique. Here's a preview of what's possible.</p>
+        <span class="section-label reveal">Gallery</span>
+        <h2 class="reveal">See the Difference.</h2>
+        <p class="reveal">Every build is unique. Here are some of our recent saunas.</p>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item gallery-featured">
-          <img src="logo.svg" alt="Featured sauna project placeholder">
-        </div>
-        <div class="gallery-item">
-          <img src="logo.svg" alt="Sauna project placeholder">
-        </div>
-        <div class="gallery-item">
-          <img src="logo.svg" alt="Sauna project placeholder">
-        </div>
-        <div class="gallery-item">
-          <img src="logo.svg" alt="Sauna project placeholder">
-        </div>
-        <div class="gallery-item">
-          <img src="logo.svg" alt="Sauna project placeholder">
-        </div>
-        <div class="gallery-item">
-          <img src="logo.svg" alt="Sauna project placeholder">
-        </div>
+
+        <a href="#lightbox-1" class="gallery-item gallery-item-tall reveal reveal-d1">
+          <img src="img/a8e67e63-db67-48ee-8e63-55da82156a89.jpg" alt="Interior overview of a Melbourne Prestige cedar sauna with bench seating and warm lighting">
+        </a>
+        <a href="#lightbox-2" class="gallery-item reveal reveal-d2">
+          <img src="img/bb473c14-27f1-49cf-8441-93d3ea0e43b4.jpg" alt="Interior view showing cedar bench and timber detailing">
+        </a>
+        <a href="#lightbox-3" class="gallery-item reveal reveal-d3">
+          <img src="img/cd88aa8e-cde1-4285-82ac-20cacde8ff1a.jpg" alt="Harvia wood-fire heater with glowing embers inside a cedar sauna">
+        </a>
+        <a href="#lightbox-4" class="gallery-item reveal reveal-d4">
+          <img src="img/07a10e11-0676-477d-b1ad-ac75af0fa803.jpg" alt="Close-up detail of cedar timber grain and craftsmanship">
+        </a>
+        <a href="#lightbox-5" class="gallery-item reveal reveal-d5">
+          <img src="img/91900208-75f0-494f-942b-e29e7649a1c6.jpg" alt="Interior sauna view with ambient LED lighting and cedar benches">
+        </a>
+
       </div>
-      <p class="gallery-note">Professional photography coming soon. In the meantime, <a href="#contact">reach out</a> and we'll share detailed shots of recent builds directly.</p>
     </div>
   </section>
+
+  <!-- CSS-only Lightboxes -->
+  <div class="lightbox" id="lightbox-1">
+    <a href="#gallery" class="lightbox-close" aria-label="Close lightbox">&times;</a>
+    <a href="#lightbox-5" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</a>
+    <a href="#lightbox-2" class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</a>
+    <img class="lightbox-img" src="img/a8e67e63-db67-48ee-8e63-55da82156a89.jpg" alt="Interior overview of a Melbourne Prestige cedar sauna with bench seating and warm lighting">
+    <p class="lightbox-caption">Interior overview — warm cedar, clean lines</p>
+  </div>
+  <div class="lightbox" id="lightbox-2">
+    <a href="#gallery" class="lightbox-close" aria-label="Close lightbox">&times;</a>
+    <a href="#lightbox-1" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</a>
+    <a href="#lightbox-3" class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</a>
+    <img class="lightbox-img" src="img/bb473c14-27f1-49cf-8441-93d3ea0e43b4.jpg" alt="Interior view showing cedar bench and timber detailing">
+    <p class="lightbox-caption">Premium western red cedar benching</p>
+  </div>
+  <div class="lightbox" id="lightbox-3">
+    <a href="#gallery" class="lightbox-close" aria-label="Close lightbox">&times;</a>
+    <a href="#lightbox-2" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</a>
+    <a href="#lightbox-4" class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</a>
+    <img class="lightbox-img" src="img/cd88aa8e-cde1-4285-82ac-20cacde8ff1a.jpg" alt="Harvia wood-fire heater with glowing embers inside a cedar sauna">
+    <p class="lightbox-caption">Harvia wood-fire heater — the heart of the sauna</p>
+  </div>
+  <div class="lightbox" id="lightbox-4">
+    <a href="#gallery" class="lightbox-close" aria-label="Close lightbox">&times;</a>
+    <a href="#lightbox-3" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</a>
+    <a href="#lightbox-5" class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</a>
+    <img class="lightbox-img" src="img/07a10e11-0676-477d-b1ad-ac75af0fa803.jpg" alt="Close-up detail of cedar timber grain and craftsmanship">
+    <p class="lightbox-caption">Every detail considered, every joint precise</p>
+  </div>
+  <div class="lightbox" id="lightbox-5">
+    <a href="#gallery" class="lightbox-close" aria-label="Close lightbox">&times;</a>
+    <a href="#lightbox-4" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</a>
+    <a href="#lightbox-1" class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</a>
+    <img class="lightbox-img" src="img/91900208-75f0-494f-942b-e29e7649a1c6.jpg" alt="Interior sauna view with ambient LED lighting and cedar benches">
+    <p class="lightbox-caption">Ambient LED lighting — atmosphere at your fingertips</p>
+  </div>
 
   <!-- ============================================================
        PRICING
        ============================================================ -->
   <section id="pricing" class="pricing">
     <div class="container">
-      <span class="section-label">Investment</span>
-      <h2>What Does a Custom Sauna Cost?</h2>
-      <div class="pricing-range fade-in">
-        $20K <span>to</span> $40K
+      <span class="section-label reveal">Investment</span>
+      <h2 class="reveal">What Does a Custom Sauna Cost?</h2>
+      <div class="pricing-range reveal reveal-d1">
+        $40K <span>to</span> $70K
       </div>
-      <p class="pricing-details">
+      <p class="pricing-details reveal">
         Every Melbourne Prestige Sauna is quoted individually. Your price depends on size,
         materials, site conditions, heating choice, and the level of finish you're after.
         That range covers the majority of builds we deliver — from compact backyard retreats
         to full-featured wellness pavilions. We'll give you a firm, transparent quote before
         a single piece of timber is ordered.
       </p>
-      <a href="#contact" class="btn btn-primary">Start Your Quote</a>
+      <a href="#contact" class="btn btn-primary reveal">Start Your Quote</a>
 
       <div class="pricing-points">
-        <div class="pricing-point">
-          <span class="check">✓</span>
+        <div class="pricing-point reveal reveal-d1">
+          <span class="check">&#10003;</span>
           <h4>All-In Quote</h4>
           <p>Materials, labour, delivery, and installation — one number, no surprises.</p>
         </div>
-        <div class="pricing-point">
-          <span class="check">✓</span>
+        <div class="pricing-point reveal reveal-d2">
+          <span class="check">&#10003;</span>
           <h4>Premium Materials</h4>
           <p>Western red cedar, stainless steel fixtures, and commercial-grade insulation as standard.</p>
         </div>
-        <div class="pricing-point">
-          <span class="check">✓</span>
+        <div class="pricing-point reveal reveal-d3">
+          <span class="check">&#10003;</span>
           <h4>Warranty &amp; Support</h4>
           <p>Every build backed by our comprehensive warranty and ongoing care.</p>
         </div>
@@ -1166,44 +1289,44 @@
   <section id="faq" class="faq">
     <div class="container">
       <div class="faq-header">
-        <span class="section-label">FAQ</span>
-        <h2>Good Questions. Straight Answers.</h2>
+        <span class="section-label reveal">FAQ</span>
+        <h2 class="reveal">Good Questions. Straight Answers.</h2>
       </div>
       <div class="faq-list">
-        <div class="faq-item">
+        <div class="faq-item reveal reveal-d1">
           <input type="radio" name="faq" id="faq1">
           <label for="faq1" class="faq-question">How long does a build take?</label>
           <div class="faq-answer">
-            <div class="faq-answer-inner">
+            <p class="faq-answer-inner">
               Most builds take approximately <strong>one month</strong> from slab to final sign-off. Timing varies with size and complexity — a compact two-person sauna may be done in three weeks; a larger pavilion with kitchenette, shower, and custom finishes might run six. We'll give you a clear schedule at quoting stage and keep you updated throughout.
-            </div>
+            </p>
           </div>
         </div>
-        <div class="faq-item">
+        <div class="faq-item reveal reveal-d2">
           <input type="radio" name="faq" id="faq2">
           <label for="faq2" class="faq-question">Do you service all of Victoria?</label>
           <div class="faq-answer">
-            <div class="faq-answer-inner">
+            <p class="faq-answer-inner">
               Yes. We're based in Melbourne and serve <strong>all of Victoria</strong> — from inner-city backyards to Mornington Peninsula, the Surf Coast, the Dandenongs, Daylesford, and regional properties. Distance may affect logistics costs for very remote sites, but we've yet to find a project we couldn't reach.
-            </div>
+            </p>
           </div>
         </div>
-        <div class="faq-item">
+        <div class="faq-item reveal reveal-d3">
           <input type="radio" name="faq" id="faq3">
-          <label for="faq3" class="faq-question">Wood‑fire or electric — which is better?</label>
+          <label for="faq3" class="faq-question">Wood‑fire only — why no electric?</label>
           <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <strong>Wood-fire</strong> is the traditional choice — it delivers a softer, more enveloping heat, that unmistakable crackle, and a ritual that electric simply can't match. It does require a chimney and a wood supply. <strong>Electric</strong> is convenient, fast to heat, and ideal where a flue isn't practical. We'll guide you through the trade-offs based on your space and how you plan to use the sauna. Many of our clients choose wood-fire — once you've experienced it, it's hard to go back.
-            </div>
+            <p class="faq-answer-inner">
+              We specialise exclusively in <strong>wood-fire saunas</strong> because we believe they deliver a fundamentally better experience. The heat is softer and deeper. The aroma of burning timber adds another sensory layer. The ritual — loading the firebox, hearing the crackle, watching the glow — is part of what makes a sauna session meaningful. Electric heaters are convenient, but they can't replicate what a real fire brings. Once you've experienced wood-fire, it's hard to go back.
+            </p>
           </div>
         </div>
-        <div class="faq-item">
+        <div class="faq-item reveal reveal-d4">
           <input type="radio" name="faq" id="faq4">
           <label for="faq4" class="faq-question">What's included in the build?</label>
           <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <strong>Everything structural:</strong> concrete slab or stumps, western red cedar framing and cladding, commercial-grade insulation, flooring, benching, door, heater and chimney (or electric unit), and all electrical rough-in. What's <strong>not</strong> included by default — but can be added — are items like outdoor showers, kitchenettes, landscaping, and custom finishes. We'll walk you through every line item so you know exactly what you're getting.
-            </div>
+            <p class="faq-answer-inner">
+              <strong>Everything structural:</strong> concrete slab or stumps, western red cedar framing and cladding, commercial-grade insulation, flooring, benching, door, heater and chimney, and all electrical rough-in. What's <strong>not</strong> included by default — but can be added — are items like outdoor showers, kitchenettes, landscaping, and custom finishes. We'll walk you through every line item so you know exactly what you're getting.
+            </p>
           </div>
         </div>
       </div>
@@ -1217,27 +1340,36 @@
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info">
-          <span class="section-label">Get In Touch</span>
-          <h2>Let's Talk About<br>Your Sauna.</h2>
-          <p>
+          <span class="section-label reveal">Get In Touch</span>
+          <h2 class="reveal">Let's Talk About<br>Your Sauna.</h2>
+          <p class="reveal">
             The best projects start with a conversation. Tell us what you're imagining — size,
             style, features, timeline — and we'll sketch out what's possible. No obligation, no
             hard sell. Just honest advice from someone who builds saunas for a living.
           </p>
-          <div class="contact-detail">
-            <div class="icon">📞</div>
-            <div><strong style="display:block;color:var(--color-wood);font-size:0.8rem;letter-spacing:0.06em;">PHONE</strong><a href="tel:+61000000000">0400 000 000</a></div>
+          <div class="contact-detail reveal">
+            <div class="icon">&#128222;</div>
+            <div>
+              <strong style="display:block;color:var(--color-wood);font-size:0.8rem;letter-spacing:0.06em;margin-bottom:0.15rem;">PHONE</strong>
+              <a href="tel:+61000000000">0400 000 000</a>
+            </div>
           </div>
-          <div class="contact-detail">
-            <div class="icon">✉️</div>
-            <div><strong style="display:block;color:var(--color-wood);font-size:0.8rem;letter-spacing:0.06em;">EMAIL</strong><a href="mailto:hello@melbourneprestigesauna.com.au">hello@melbourneprestigesauna.com.au</a></div>
+          <div class="contact-detail reveal">
+            <div class="icon">&#9993;</div>
+            <div>
+              <strong style="display:block;color:var(--color-wood);font-size:0.8rem;letter-spacing:0.06em;margin-bottom:0.15rem;">EMAIL</strong>
+              <a href="mailto:hello@melbourneprestigesauna.com.au">hello@melbourneprestigesauna.com.au</a>
+            </div>
           </div>
-          <div class="contact-detail">
-            <div class="icon">📍</div>
-            <div><strong style="display:block;color:var(--color-wood);font-size:0.8rem;letter-spacing:0.06em;">SERVICE AREA</strong><span style="color:var(--color-cream);">Melbourne &amp; All Victoria</span></div>
+          <div class="contact-detail reveal">
+            <div class="icon">&#128205;</div>
+            <div>
+              <strong style="display:block;color:var(--color-wood);font-size:0.8rem;letter-spacing:0.06em;margin-bottom:0.15rem;">SERVICE AREA</strong>
+              <span style="color:var(--color-cream);">Melbourne &amp; All Victoria</span>
+            </div>
           </div>
         </div>
-        <div class="contact-form fade-in">
+        <div class="contact-form reveal reveal-d1">
           <h3>Request a Quote</h3>
           <form action="#" method="post">
             <div class="form-row">
@@ -1260,9 +1392,8 @@
                 <select id="budget" name="budget">
                   <option value="">Select range</option>
                   <option value="30-50">$30K – $50K</option>
-                  <option value="20-30">$20K – $30K</option>
-                  <option value="30-40">$30K – $40K</option>
-                  <option value="40plus">$40K+</option>
+                  <option value="50-70">$50K – $70K</option>
+                  <option value="70-100">$70K – $100K</option>
                   <option value="100+">$100K+</option>
                   <option value="not-sure">Not sure yet</option>
                 </select>
@@ -1292,6 +1423,28 @@
     <div class="footer-divider"></div>
     <p class="footer-legal">&copy; 2026 Melbourne Prestige Sauna. All rights reserved.</p>
   </footer>
+
+  <!-- ============================================================
+       INTERSECTION OBSERVER — SCROLL REVEAL
+       ============================================================ -->
+  <script>
+    (function() {
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      document.querySelectorAll('.reveal').forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
 
 </body>
 </html>

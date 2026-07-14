@@ -1,0 +1,32 @@
+[
+  {
+    "file": "b0331afd-5b38-423c-a6d3-afad353a8f90.jpg",
+    "subject": "sauna interior",
+    "use": "gallery"
+  },
+  {
+    "file": "cd88aa8e-cde1-4285-82ac-20cacde8ff1a.jpg",
+    "subject": "sauna stove",
+    "use": "detail"
+  },
+  {
+    "file": "bb473c14-27f1-49cf-8441-93d3ea0e43b4.jpg",
+    "subject": "sauna interior",
+    "use": "gallery"
+  },
+  {
+    "file": "07a10e11-0676-477d-b1ad-ac75af0fa803.jpg",
+    "subject": "sauna interior",
+    "use": "gallery"
+  },
+  {
+    "file": "a8e67e63-db67-48ee-8e63-55da82156a89.jpg",
+    "subject": "sauna interior",
+    "use": "gallery"
+  },
+  {
+    "file": "91900208-75f0-494f-942b-e29e7649a1c6.jpg",
+    "subject": "sauna interior",
+    "use": "gallery"
+  }
+]
