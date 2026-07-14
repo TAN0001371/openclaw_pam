@@ -1,0 +1,19 @@
+[PARAPHRASED] Here is the extracted and paraphrased mathematical content from the provided page:
+
+### Problem 28: Staircase Blocks
+*   **Question:** Determine the total number of blocks required to build a staircase with 12 steps, where the first step is 1 block high, the second is 2 blocks high, and so on, up to the 12th step which is 12 blocks high.
+*   **Mathematical Approach:** 
+    *   One method involves calculating the sum of the triangular numbers for each slice, represented as the sum of integers from 1 to 12 ($78$), multiplied by the 12 slices, resulting in $12 \times 78$.
+    *   An alternative method involves rearranging the staircase into a rectangular prism with dimensions $6 \times 12 \times 13$.
+*   **Answer:** 936 blocks.
+
+### Problem 29: Digit Calculation
+*   **Question:** Identify a 3-digit number $abc$ that satisfies a specific addition algorithm where there is a carry into the 1000s column (implying the sum results in a 4-digit number starting with 1).
+*   **Mathematical Approach:**
+    *   By analyzing the columns:
+        *   In the units column, $a + b + c$ must equal 18 to facilitate a carry.
+        *   In the tens column, accounting for the carry, $1 + a + b$ must equal 11, leading to $a + b = 10$.
+        *   Given $a + b + c = 18$ and $a + b = 10$, it follows that $c = 8$.
+        *   In the hundreds column, $1 + a = 10$, which means $a = 9$.
+        *   Substituting $a = 9$ into $a + b = 10$ gives $b = 1$.
+*   **Answer:** 918.

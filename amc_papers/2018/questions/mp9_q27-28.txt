@@ -1,0 +1,30 @@
+Here is the transcription of the text and questions from the page:
+
+**MP 9**
+
+**27.** A teacher wants her students to guess the three-digit number that she is thinking. She gives these clues:
+* It is divisible by both 3 and 11.
+* If you subtract one, the result is divisible by both 2 and 7.
+
+Which number is it?
+
+**28.** These staircases are made from layers of blocks.
+Each staircase is one block wider, one block longer and one block taller than the previous staircase.
+How many blocks are needed to build the 12-step staircase?
+
+*[Diagram description: Three staircases are shown made of grey cubes. The "One step" staircase is 1 cube. The "Two steps" staircase is an L-shaped base of 3 cubes with 1 cube on top. The "Three steps" staircase is a larger L-shaped base with a total of 6 cubes on the bottom layer, 3 on the second layer, and 1 on the top layer.]*
+
+**29.** In the algorithm below, the letters $a$, $b$ and $c$ represent different digits from 0 to 9.
+What is the three-digit number $abc$?
+
+*[Diagram description: An addition problem formatted as follows:]*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$a$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$a$ $b$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$a$ $b$ $c$
+$+ \ 1$ $0$ $0$ $0$
+________________
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$2$ $0$ $1$ $8$
+
+**30.** I wrote the counting numbers joined together:
+1234567891011121314151617...
+Which of the counting numbers was I writing when the 100th zero was written?

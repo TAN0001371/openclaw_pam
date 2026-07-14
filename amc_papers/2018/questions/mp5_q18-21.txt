@@ -1,0 +1,29 @@
+MP 5
+
+16. Karen, Warren, and Andrew bought plastic letters to spell each of their names on their birthday cakes. Their birthdays are on different dates, so they planned to reuse letters on different cakes. What is the smallest number of letters they needed?
+
+(A) 6 (B) 7 (C) 8 (D) 9 (E) 10
+
+17. At Susie's party, they have four pizzas to share and each person gets 2/3 of a pizza. How many people are at the party?
+
+[Diagram description: Four circular pizza graphics, each divided into slices, arranged vertically in a column.]
+
+(A) 4 (B) 6 (C) 8 (D) 12 (E) 16
+
+18. Fred looked at the clock during the Library lesson. Which one of these times could the clock have shown?
+
+[Table: Friday timetable]
+9.00 am English
+10.00 am Mathematics
+11.00 am Recess
+11.30 am Library
+12.30 pm Assembly
+1.00 pm Lunch
+2.00 pm Sport
+
+[Diagrams of five analog clocks, labeled A through E]
+(A) Hour hand between 11 and 12, minute hand at 3.
+(B) Hour hand slightly past 12, minute hand at 3.
+(C) Hour hand slightly past 1, minute hand at 3.
+(D) Hour hand slightly past 2, minute hand at 3.
+(E) Hour hand slightly past 3, minute hand at 3.
