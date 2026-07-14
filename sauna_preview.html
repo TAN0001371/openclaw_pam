@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timber &amp; Steam — Sauna Builders</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    background: #1a120b;
+    color: #d6c5b0;
+    min-height: 100vh;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem clamp(1rem, 4vw, 3rem);
+    background: linear-gradient(180deg, #2c1f14 0%, #23170e 100%);
+    border-bottom: 1px solid #3d2e20;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #e8b87a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+  .logo:hover { color: #f0ca8c; }
+  .logo-icon { font-size: 1.65rem; line-height: 1; }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+  }
+  .nav a {
+    color: #bfa98a;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.4rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .nav a:hover,
+  .nav a.active {
+    color: #e0cba0;
+    border-bottom-color: #c48b4a;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.4rem;
+    background: linear-gradient(135deg, #c48b4a 0%, #a8692e 100%);
+    color: #1a1008;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(196, 139, 74, 0.35);
+  }
+  .btn:active { transform: translateY(0); }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #bfa98a;
+    border-radius: 1px;
+    transition: all 0.25s;
+  }
+
+  #menu-toggle { display: none; }
+
+  @media (max-width: 700px) {
+    .hamburger { display: flex; }
+
+    .header { flex-wrap: wrap; }
+
+    .nav {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      gap: 0;
+      order: 3;
+      background: #23170e;
+      border-top: 1px solid #3d2e20;
+      margin-top: 0.75rem;
+      padding: 0.5rem 0;
+    }
+    .nav a {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #2e2215;
+    }
+
+    #menu-toggle:checked ~ .nav { display: flex; }
+
+    #menu-toggle:checked + .hamburger span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    #menu-toggle:checked + .hamburger span:nth-child(2) { opacity: 0; }
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a href="#" class="logo">
+    <span class="logo-icon">🪵</span> Timber &amp; Steam
+  </a>
+
+  <input type="checkbox" id="menu-toggle">
+  <label class="hamburger" for="menu-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </label>
+
+  <nav>
+    <ul class="nav">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Our Work</a></li>
+      <li><a href="#">Process</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <a href="#" class="btn">Get a Quote →</a>
+</header>
+
+</body>
+</html>
