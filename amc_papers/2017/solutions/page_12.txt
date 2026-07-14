@@ -1,0 +1,39 @@
+21. (Also UP19)
+In the net we can find the opposite faces.
+• ■ is opposite ✚ which rules out (D).
+• ● is opposite ✤ which rules out (A).
+• ✚ is opposite ✤ which rules out (B).
+
+We can also rule out (C) by looking at what happens if ✚ is the top face of the cube
+and ■ and ● and ✤ are visible. This puts ● on the left and ✚ on the right.
+The cube in (E) is possible, since with ● on top, and with ■ on the left, ✤ is on
+the right,
+hence (E).
+
+22. The possibilities are 223, 232, 233, 322, 323 and 332,
+hence (C).
+
+23. (Also UP21)
+The folded paper has 8 layers when it is cut.
+One of these cut layers is shown on the original
+square on the left, and all 8 are shown on the
+right,
+hence (D).
+
+24. 12 = 1 × 2 × 2 × 3, so the possible dimensions of the rectangular block are:
+1 × 1 × 12
+1 × 2 × 6
+1 × 3 × 4
+2 × 2 × 3
+So there are 4 possible rectangular blocks,
+hence (C).
+
+25. All the numbers on the clockface add to 78, and 78 ÷ 3 = 26.
+Checking, this can be done by including 2 pairs of 13 in each region:
+hence (D).
+Note: This solution doesn’t investigate the possibility that one or both lines split a
+two-digit number into two one-digit numbers. In these cases the total would be 23
+
+31
+
+Middle Primary Solutions

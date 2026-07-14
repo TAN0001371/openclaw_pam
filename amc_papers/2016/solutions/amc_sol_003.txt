@@ -1,0 +1,45 @@
+Here is the transcription of the provided page from the AMC Middle Primary past paper.
+
+***
+
+**16.** There are 3 + 6 + 2 + 1 + 4 = 16 students, so half the class is 8 students.
+The 6 with orange hats are in one-half of the class, and so the other two students in that half of the class have black hats.
+So the only way to split the class into two equal groups is with orange and black in one group and red, green and yellow in the other,
+hence (A).
+
+**17.** The sum of the first five digits is 22. Therefore the sum of the last two digits must be 12, as 34 − 22 = 12. There are 7 possibilities for the last two digits: 39, 93, 48, 84, 57, 75, and 66,
+hence (B).
+
+**18.** (Also UP12)
+The large square must have side 8 cm. Then all of the corners of the pieces in the tangram lie on a grid of 2 cm × 2 cm squares.
+
+*[Image description: A 4x4 grid of squares. A tangram-style shape is outlined on top of it. Two triangular segments are shaded grey within the grid.]*
+
+The shaded square has the same area as 2 of the grid squares, or 2 × (2 cm × 2 cm) = 8 cm²,
+hence (D).
+
+**19.** No matter how a single fold is made, there will be one of the original right-angle corners that is on the boundary of the shape. Of the 5 shapes, (E) does not have any right angles, so it can't be made with a single fold. The other four figures can be made with a single fold:
+
+*[Image description: Four diagrams labeled (A), (B), (C), and (D). Each shows a rectangle or square with a dashed line indicating a fold and an arrow showing the direction of the fold.]*
+
+(A) shows a rectangle being folded in half vertically.
+(B) shows a square being folded at one corner.
+(C) shows a square being folded diagonally.
+(D) shows a rectangle being folded at one corner.
+
+hence (E).
+
+**20.** *Alternative 1*
+There are 5 ways of making 12 from these numbers:
+7 + 4 + 1 = 12, 7 + 3 + 2 = 12, 6 + 5 + 1 = 12, 6 + 4 + 2 = 12, 5 + 4 + 3 = 12
+The number 4 is in 3 of these sums, and not in 1 + 5 + 6 and 2 + 3 + 7.
+The number 4 could be either in a corner, a side or the centre:
+
+*[Image description: Three diagrams labeled (i), (ii), and (iii). Each shows a set of circles connected by lines in a star/cross pattern. Some circles are grouped by dashed boxes. 
+(i) Shows the number 4 in the top-left corner circle.
+(ii) Shows the number 4 in the top-middle circle.
+(iii) Shows the number 4 in the central intersection circle.]*
+
+***
+
+*Footer:* 32

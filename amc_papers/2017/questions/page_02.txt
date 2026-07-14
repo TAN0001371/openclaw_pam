@@ -1,0 +1,48 @@
+Below is the transcription of the provided page.
+
+***
+
+12. (Also UP7)
+Subtract the 73 and then add 37 to get the correct answer: 157 – 73 + 37 = 121,
+hence (B).
+
+13. (Also UP8)
+The squares and triangles are worth 4 × 6 + 3 × 6 = 24 + 18 = 42 cents. Then the
+hexagon is worth 50 – 42 = 8 cents,
+hence (B).
+
+14. For every 3 biscuits in the normal packet, the special one contains 4.
+The special packet contains 24 = 6 × 4, so the normal packet must contain 6 × 3 = 18
+biscuits,
+hence (C).
+
+15. (Also UP11)
+Reflect the clock face in a vertical axis so that it is the right way around.
+
+[Diagram description: A round clock face showing the number 12 at the top. The hour hand points roughly towards the 4, and the minute hand points towards the 2.]
+
+Then the time is 10 minutes past 7,
+hence (E).
+
+16. The shape has one side of length 6 cm, one side of length 2 cm and 10 sides of length
+1 cm. The perimeter is 6 + 2 + 10 = 18 cm,
+hence (C).
+
+17. (Also UP12)
+Alternative 1
+Adding both left-hand sides, 4 hearts and 4 stars are equal to 32, so star + heart = 8.
+Then in the first line, heart + heart + 8 = 12 so that heart + heart = 4 and heart = 2,
+hence (B).
+
+Alternative 2
+We can make this pattern.
+
+[Diagram description: A table showing five rows of equations using heart and star symbols.]
+Row 1: star + heart + heart = [Empty Box]
+Row 2: star + heart + heart + star = 12
+Row 3: star + heart + star + star = [Empty Box]
+Row 4: heart + star + star + star = 20
+Row 5: star + star + star + star = [Empty Box]
+
+***
+2017 AMC — Middle Primary Solutions | 29

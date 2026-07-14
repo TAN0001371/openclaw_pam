@@ -1,0 +1,29 @@
+MP 4
+
+15. A sailor coiled a rope on his ship's deck, and some paint was spilled across half of it. What did the rope look like when it was uncoiled?
+
+[Image description: To the right of the text is an illustration showing a tightly coiled rope sitting on the deck, with a large, amorphous black splotch of "paint" covering approximately the central half of the coils.]
+
+(A) [Image description: A line segment beginning with a loop, followed by a long straight line with alternating black and white segments. The sequence is: white, black, white, black, white, black, white, black, white.]
+(B) [Image description: A line segment beginning with a loop, followed by a long straight line. The sequence is: black, white, black, white, black, white, black, white, black.]
+(C) [Image description: A line segment beginning with a loop, followed by a long straight line. The sequence is: white, white, white, black, black, black, white, white, white.]
+(D) [Image description: A line segment beginning with a loop, followed by a long straight line. The sequence is: white, black, white, black, white, black, white, black, white.]
+(E) [Image description: A line segment beginning with a loop, followed by a long straight line. The sequence is: white, white, white, white, black, black, black, black, white.]
+
+16. The students in Mr Day’s class were asked the colour of their sun hat. The results are shown in the graph. Mr Day chooses two colours which include the hat colours of exactly half of the class. Which two colours does he choose?
+
+[Image description: A bar graph titled "Sun hat colours". The y-axis ranges from 0 to 7. The bars are as follows: red = 3, orange = 6, black = 2, green = 1, yellow = 4.]
+
+(A) orange and black
+(B) green and yellow
+(C) black and yellow
+(D) red and orange
+(E) red and yellow
+
+17. The sum of the seven digits in Mario’s telephone number is 34. The first five digits are 73903. How many possibilities are there for the last two digits?
+
+(A) 6
+(B) 7
+(C) 8
+(D) 9
+(E) 10

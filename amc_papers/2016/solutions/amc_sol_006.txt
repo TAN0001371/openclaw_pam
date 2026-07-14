@@ -1,0 +1,13 @@
+Here is the extracted mathematical content from the document, summarized for your tutoring materials:
+
+**Question 28**
+*   **Method:** This is a combinatorics problem involving selection. The solution involves breaking the problem down into mutually exclusive cases based on whether certain items (stamps A and B) are selected. By analyzing the requirements for the remaining stamps in each scenario (A and B both in, only A in, only B in, or neither in), you calculate the number of valid configurations for each case and sum them up.
+*   **Final Answer:** 8
+
+**Question 29**
+*   **Method:** This is an arithmetic sequence problem. You start by identifying the base cost (the first cube) and the constant rate of change (the additional matches per subsequent cube). To find the total number of complete cubes possible with a fixed supply of matches, subtract the cost of the first cube from the total, divide the remainder by the cost per additional cube, and add the initial cube back into the count. The remainder of this division represents the unused matches.
+*   **Final Answer:** 251
+
+**Question 30**
+*   **Method:** This is a number theory problem involving factors and prime factorization. You identify the prime factors of the product (2016) and restrict the possible ages to single-digit integers. By testing combinations of these factors that multiply to 2016, you determine which set of four numbers fits the criteria. Once the correct set is identified, you calculate their sum.
+*   **Final Answer:** 28

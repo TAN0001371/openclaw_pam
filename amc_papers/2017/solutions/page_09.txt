@@ -1,0 +1,40 @@
+Solutions - 2017
+
+1. (Also J1)
+2 + 0 + 1 + 7 = 10,
+hence (A).
+
+2. 2017 - 9 = 2008,
+hence (C).
+
+3. The 2 is in the 100s column, so it has value 200,
+hence (E).
+
+4. From column 1 to column 3 is two squares right. From row K to row L is one square down,
+hence (A).
+
+5. 4 x 30 = 120 therefore the apples cost $1.20,
+hence (D).
+
+6. (Also UP3)
+Three out of the five dice showed a two on top,
+hence (E).
+
+7. 23 - 15 = 8, so it is 8 km from Marytown to Smithton,
+hence (A).
+
+8. With 4 buses, only 200 people can fit, whereas with 5 buses, up to 250 fit,
+hence (C).
+
+9. (Also UP5)
+Only shapes 1 and 3 have five sides and therefore are pentagons,
+hence (D).
+
+10. Before giving half of his apples to Sally, he must have had 2 apples, so at the start he must have had 4 apples,
+hence (D).
+
+11. Counting squares, $A = 8$, $B = 5\frac{1}{2}$, $C = 7$, $D = 6$ and $E = 7\frac{1}{2}$,
+hence (A).
+
+28
+2017 AMC — Middle Primary Solutions

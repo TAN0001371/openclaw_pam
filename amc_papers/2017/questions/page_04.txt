@@ -1,0 +1,20 @@
+MP 8
+
+27. Julie has 5 steps up to her classroom, where step 5 is the floor of the classroom. Each day she tries to think of a different way of climbing up these steps. She does not have to touch each step, but the biggest distance she can reach is 3 steps.
+How many different ways are there of going up the steps?
+
+*Diagram description: A simple line drawing showing a staircase with 5 steps leading up to a platform.*
+
+28. Zhipu has an unusual construction set, consisting of square tiles which only connect together if they are joined with half a side touching. That is, the corner of one connects with the midpoint of the other, as in the diagram.
+In how many ways can he connect three tiles?
+(Two arrangements are not different if they can be rotated or reflected to look the same.)
+
+*Diagram description: A drawing showing two squares connected such that the corner of one square touches the midpoint of the side of the other square.*
+
+29. Old Clarrie has three dogs. The oldest is Bob, next comes Rex and Fido is the youngest. Fido is 10 years younger than Bob, and none of the dogs are the same age.
+When Clarrie adds their ages together they come to 28 years.
+When Clarrie multiplies their ages together, he gets a number.
+What is the smallest that this number could be?
+
+30. All of the digits from 0 to 9 are used to form two 5-digit numbers.
+What is the smallest possible difference between these two numbers?

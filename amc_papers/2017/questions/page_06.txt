@@ -1,0 +1,42 @@
+MP 6
+
+Questions 21 to 25, 5 marks each
+
+21. This shape can be folded up to make a cube.
+Which cube could it make?
+
+[Image description: The shape consists of a cross-like arrangement of 6 squares:
+- Top square: Contains a plus-sign (+) symbol.
+- Center square: Contains a solid circle.
+- Left square: Is a solid grey square.
+- Right square: Contains a diamond shape with a cross inside.
+- Bottom square (from center): Contains an 8-pointed star/asterisk.
+- Far bottom square: Contains a different 8-pointed star/asterisk.]
+
+(A) [Image description: A cube showing the two stars and the solid circle.]
+(B) [Image description: A cube showing the diamond-cross, the plus-sign, and one star.]
+(C) [Image description: A cube showing the diamond-cross, the plus-sign, and the other star.]
+(D) [Image description: A cube showing the grey square, the plus-sign, and the diamond-cross.]
+(E) [Image description: A cube showing the solid circle, the grey square, and one star.]
+
+22. How many three-digit numbers contain only the digits 2 and 3, and each of them at least once?
+(A) 2
+(B) 4
+(C) 6
+(D) 8
+(E) 32
+
+23. Which one of the patterns below would be created with these folds and cuts?
+
+[Image description: A sequence of five diagrams showing a square paper being folded:
+1. A square with a dashed diagonal line.
+2. A triangle folded from that square.
+3. A smaller triangle folded again.
+4. An even smaller triangle.
+5. The smallest triangle with a small shape cut out from the folded edge.]
+
+(A) [Image description: A square with a small diamond in the center and small triangles on the midpoints of each side.]
+(B) [Image description: A square with four small squares located near the corners.]
+(C) [Image description: A square divided into four smaller squares by a cross, with a small square cut out of the center of each quadrant.]
+(D) [Image description: A square with four small diamonds located near the corners.]
+(E) [Image description: A square with a small central square and four small diamonds positioned near the sides.]

@@ -1,0 +1,24 @@
+MP 2
+
+**7.** Will has a 45-minute music lesson every Tuesday afternoon after school. If it begins at 4:30 pm, at what time does it finish?
+(A) 4:45 pm (B) 4:55 pm (C) 4:75 pm (D) 5:00 pm (E) 5:15 pm
+
+**8.** In our garage there are 4 bicycles, 2 tricycles and one quad bike. How many wheels are there altogether?
+(A) 3 (B) 6 (C) 7 (D) 14 (E) 18
+
+*Image description: To the right of question 8, there are three line-art illustrations stacked vertically: a bicycle, a tricycle, and a quad bike.*
+
+**9.** Ten chairs are equally spaced around a round table. They are numbered 1 to 10 in order. Which chair is opposite chair 9?
+(A) 1 (B) 2 (C) 3 (D) 4 (E) 5
+
+**10.** Lee's favourite chocolates are 80c each. He has five dollars to spend. How many of these chocolates can he buy?
+(A) 4 (B) 5 (C) 6 (D) 7 (E) 8
+
+*Image description: To the right of question 10, there is an illustration of two small, square, dark-colored chocolate blocks.*
+
+Questions 11 to 20, 4 marks each
+
+**11.** The four digits 2, 3, 8 and 9 are placed in the boxes so that when both two-digit numbers are added, the sum is as large as possible. What is this sum?
+[Box] [Box] + [Box] [Box]
+
+(A) 175 (B) 67 (C) 156 (D) 179 (E) 121

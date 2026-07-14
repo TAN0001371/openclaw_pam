@@ -1,0 +1,46 @@
+Below is the transcription of the provided page. Note: This page contains explanations/solutions for questions 11–15.
+
+***
+
+Alternative 2
+Multiples of 80 are 80, 160, 240, 320, 400, 480, 560. From this, he can afford 6 chocolates but not 7,
+hence (C).
+
+11. To make the total as large as possible, the large digits should have place value as large as possible. That is, 9 and 8 will be in the tens positions of the two numbers.
+Then 3 and 2 will be in the units positions.
+Then the sum is either 93 + 82 = 175 or 92 + 83 = 175, both with total 175,
+hence (A).
+
+12. (Also J6)
+Each time the paper is unfolded, the two parts will be reflections of each other through the fold line.
+
+**[Image Description:]**
+*   **Part 1:** A circular sector (a quarter-circle) is shown with a horizontal dashed line running through the middle. An arrow points to the right.
+*   **Part 2:** A semicircle is shown. A vertical dashed line indicates where the previous shape was folded/reflected. An arrow points to the right.
+*   **Part 3:** A full circle is shown. There is a diamond-shaped hole in the center created by the reflections. The circular area is shaded grey.
+
+hence (A).
+
+13. (Also UP8)
+She either has a 50c coin or not.
+If she has a 50c coin, then she has one other 10c coin: 50 + 10 = 60.
+If she has no 50c coins, then she either has 0, 1, 2 or 3 20c coins:
+20 + 20 + 20 = 60
+20 + 20 + 10 + 10 = 60
+20 + 10 + 10 + 10 + 10 = 60
+10 + 10 + 10 + 10 + 10 + 10 = 60
+In all, there are 5 possibilities,
+hence (D).
+
+14. Since there are 3 colours, you can't be sure that the first 3 beans include a pair.
+However, with 4 beans, they can't all be different colours, so there must be a pair of the same colour.
+So 4 beans (and no more) are needed to make sure you have a pair,
+hence (B).
+
+15. (Also UP11)
+Starting from the outer end of the spiral (the loop on the rope) the dark and light sections are longest, and the light sections are of similar length to the dark sections.
+As you move towards the other end of the rope, both dark and light sections get shorter. Only rope (A) shows this,
+hence (A).
+
+***
+2016 AMC [Page number partially obscured, looks like 7]

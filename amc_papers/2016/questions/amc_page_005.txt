@@ -1,0 +1,35 @@
+MP 6
+
+**22.** In this grid you can only move downward, going from point to point along the lines shown. One route from $P$ to $Q$ is drawn in. How many different routes are there from $P$ to $Q$?
+
+**(Diagram description:** A diamond-shaped grid of dots connected by lines. There is a top point labeled $P$ and a bottom point labeled $Q$. The grid consists of 4 levels of points below $P$, forming a diamond shape that narrows back down to $Q$. A dotted line illustrates one path from top to bottom.)
+
+(A) 2 
+(B) 4 
+(C) 6 
+(D) 8 
+(E) 12
+
+***
+
+**23.** I have five coloured discs in a pile as shown. I take the top two discs and put them on the bottom (with the red disc still on top of the blue disc). Then I again take the top two discs and put them on the bottom. If I do this until I have made a total of 21 moves, which disc will be on the bottom?
+
+**(Diagram description:** A vertical stack of five circular discs. From top to bottom, they are colored red, blue, green, yellow, and orange.)
+
+(A) red 
+(B) blue 
+(C) green 
+(D) yellow 
+(E) orange
+
+***
+
+**24.** A zoo keeper weighed some of the animals at Melbourne Zoo. He found that the lion weighs 90 kg more than the leopard, and the tiger weighs 50 kg less than the lion. Altogether the three animals weigh 310 kg. How much does the lion weigh?
+
+**(Diagram description:** A drawing of a lion standing on its four legs, facing left.)
+
+(A) 180 kg 
+(B) 150 kg 
+(C) 140 kg 
+(D) 130 kg 
+(E) 100 kg

@@ -1,0 +1,45 @@
+MP 5
+
+18. If the area of the tangram shown is 64 square centimetres, what is the area in square centimetres of the small square?
+(A) 32
+(B) 24
+(C) 16
+(D) 8
+(E) 4
+
+[Diagram description: A square divided into seven classic tangram pieces. One of the pieces, a small square, is shaded dark grey.]
+
+19. By making just one fold on a rectangular piece of paper, which of the following shapes is NOT possible?
+
+[Diagram description: Five shapes are presented as options A through E]
+(A) A small dark grey rectangle.
+(B) A right-angled triangle.
+(C) An irregular heptagon (a shape with 7 sides, including a V-shaped cut-out).
+(D) An irregular quadrilateral (a trapezoid shape).
+(E) A triangle.
+
+20. In this diagram there are four lines with three circles each. Place the numbers from 1 to 7 into the circles, so that each line adds up to 12. Which number must go into the circle at the centre of the diagram?
+(A) 7
+(B) 6
+(C) 5
+(D) 4
+(E) 2
+
+[Diagram description: A drawing of seven circles connected by lines. There is a top row of three circles, a bottom row of three circles, and a middle circle connected to the middle circles of the top and bottom rows.]
+
+Questions 21 to 25, 5 marks each
+
+21. Four hockey teams play each of the other three teams once. A win scores 3 points, a draw scores 1 point and a loss scores 0 points. Some figures in the following table are missing. How many points did the Hawks get?
+
+| | Played | Win | Draw | Loss | Points |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Eagles | 3 | 3 | | | 9 |
+| Hawks | 3 | | | | |
+| Falcons | 3 | 0 | 1 | | |
+| Condors | 3 | 0 | | 2 | 1 |
+
+(A) 1
+(B) 4
+(C) 6
+(D) 7
+(E) 10

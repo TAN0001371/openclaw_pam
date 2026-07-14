@@ -1,0 +1,26 @@
+Based on the provided document, here is the extracted mathematical content:
+
+**Question 21**
+*   **Paraphrase:** Given a 2D net of a cube with different symbols on its faces, identify which 3D cube configuration is correctly formed from it.
+*   **Answer Options:** (A), (B), (C), (D), (E) [Options provided in original test booklet]
+*   **Correct Answer:** (E)
+
+**Question 22**
+*   **Paraphrase:** List or identify all possible three-digit numbers that can be formed using a specific set of digits (based on previous constraints in the paper).
+*   **Answer Options:** Not explicitly listed, but the set identified is {223, 232, 233, 322, 323, 332}.
+*   **Correct Answer:** (C)
+
+**Question 23**
+*   **Paraphrase:** A piece of paper is folded and a shape is cut out of it. Given that there are 8 layers of paper, determine what the design looks like once the paper is unfolded.
+*   **Answer Options:** (A), (B), (C), (D), (E) [Options provided in original test booklet]
+*   **Correct Answer:** (D)
+
+**Question 24**
+*   **Paraphrase:** Determine how many different rectangular blocks can be formed if the volume is 12 units and all side lengths must be whole numbers.
+*   **Answer Options:** (A), (B), (C), (D), (E) [Options provided in original test booklet; solution confirms 4 possibilities]
+*   **Correct Answer:** (C)
+
+**Question 25**
+*   **Paraphrase:** If you divide a clock face into three sections with lines such that the sum of the numbers in each section is equal, what is that sum?
+*   **Answer Options:** (A), (B), (C), (D), (E) [Options provided in original test booklet; solution confirms the sum is 26]
+*   **Correct Answer:** (D)

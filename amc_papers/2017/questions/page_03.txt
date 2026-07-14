@@ -1,0 +1,47 @@
+MP 5
+
+17. In these two number sentences
+❤️ + ❤️ + ❤️ + ☆ = 12
+☆ + ☆ + ☆ + ❤️ = 20
+what is the value of ❤️?
+(A) 1
+(B) 2
+(C) 3
+(D) 4
+(E) 5
+
+18. One year in June, there were four Wednesdays and five Tuesdays. On which day was the first of June?
+(A) Monday
+(B) Tuesday
+(C) Thursday
+(D) Friday
+(E) Saturday
+
+19. In the 4 by 4 square shown, I am filling in the 16 small squares with the numbers 1, 2, 3 and 4 so that each row and each column has one of each of these numbers. I have filled in some of the squares as shown. What do the two squares marked * add to?
+
+**Description of Diagram:**
+A 4x4 grid. 
+- Row 1: First cell has "1", second cell has "*", third and fourth are empty.
+- Row 2: First and second cells are empty, third cell has "*", fourth cell has "4".
+- Row 3: First, second, and third are empty, fourth cell has "2".
+- Row 4: Cells contain "4", "3", "2", "1" respectively.
+
+(A) 3
+(B) 4
+(C) 5
+(D) 6
+(E) 7
+
+20. On these scales, two of the cubes balance with three of the balls.
+How many cubes need to be added to the right-hand side to make the scales balance?
+
+**Description of Diagram:**
+A drawing of a balance scale.
+- Left side: A tray containing 12 balls (arranged in a pyramid shape).
+- Right side: A tray containing 2 cubes.
+
+(A) 5
+(B) 6
+(C) 8
+(D) 12
+(E) 13

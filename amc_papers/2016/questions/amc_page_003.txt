@@ -1,0 +1,25 @@
+Here is the transcription of the provided page:
+
+***
+
+MP 8
+
+**27.** In a family with two sons and two daughters, the sum of the children’s ages is 55.
+The two sons were born three years apart, and the two daughters were born two years apart. The younger son is twice the age of the older daughter.
+How old is the youngest child?
+
+**28.** From this set of six stamps, how many ways could you choose three stamps that are connected along their edges?
+
+**[Image Description for 28]:** A diagram showing six square stamps arranged in a specific shape. 
+- The top row contains two stamps labeled 'A' and 'B'.
+- The bottom row contains four stamps labeled 'C', 'D', 'E', and 'F'.
+- Stamps 'A' and 'B' sit directly above stamps 'C' and 'D' respectively. Stamp 'E' is to the right of 'D', and 'F' is to the right of 'E'. 
+- All stamps are connected to their neighbors by shared edges.
+
+**29.** A class has 2016 matchsticks. Using blobs of modelling clay to join the matches together, they make a long row of cubes. This is how their row starts.
+
+**[Image Description for 29]:** A diagram showing a wire-frame representation of 6 joined cubes in a straight row. The corners of the cubes are marked with small black dots (representing clay blobs), and the edges of the cubes are represented by straight lines (representing matchsticks).
+
+They keep adding cubes to the end of the row until they don’t have enough matches left for another cube. How many cubes will they make?
+
+**30.** Mary has four children of different ages, all under 10, and the product of their ages is 2016. What is the sum of their ages?

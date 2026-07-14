@@ -1,0 +1,52 @@
+This document is a page from the 2016 Australian Mathematics Competition (AMC) Middle Primary Division solutions key. Here is the full transcription:
+
+***
+
+**Solutions – MiddlePrimary Division – 2016**
+
+**1.** 20 + 16 = 36,
+hence (C).
+
+**2.** (Also UP1)
+The numbers in order are 555, 556, 565, 566, 655,
+hence (D).
+
+**3.** The digit 3 is in the thousands position, so it represents 3000,
+hence (D).
+
+**4.** I am 12 years old, so our combined ages are 6 + 12 = 18,
+hence (C).
+
+**5.** Here are all possible lines of symmetry:
+[Diagram: A row of five capital letters: V, W, X, Y, Z. 
+- The V has a single vertical line of symmetry drawn through its center.
+- The W has a single vertical line of symmetry drawn through its center.
+- The X has both a horizontal and a vertical line of symmetry drawn through its center.
+- The Y has a single vertical line of symmetry drawn through its center.
+- The Z has no line of symmetry drawn.]
+Although the Z shape has a point of symmetry, it does not have a line of symmetry,
+hence (E).
+
+**6.** (Also UP2)
+One pizza will have 4 quarters, so two pizzas will have 2 × 4 = 8 quarters,
+hence (D).
+
+**7.** After 30 minutes it is 5 pm, and after another 15 minutes it is 5:15 pm,
+hence (E).
+
+**8.** The number of wheels is 4 × 2 + 2 × 3 + 1 × 4 = 18,
+hence (E).
+
+**9.** (Also UP6)
+The opposite chair is both 5 places forward and 5 places back.
+Five places back from chair 9 is chair 4,
+[Diagram: A circle representing chairs numbered 1 through 10 in a clockwise arrangement. An arrow curves along the circle, starting from chair 9 and pointing towards chair 4.]
+hence (D).
+
+**10.** (Also UP5)
+Alternative 1
+In cents, 500 ÷ 80 = 6r20 so that he buys 6 chocolates and has 20 cents left,
+hence (C).
+
+***
+*Footer:* 2016 AMC – Middle Primary Solutions

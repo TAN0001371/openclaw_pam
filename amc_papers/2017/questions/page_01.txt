@@ -1,0 +1,15 @@
+MP 7
+
+**24.** I have a rectangular block of cheese that I can cut into 12 identical 1 cm cubes, with none left over. How many differently-shaped blocks of cheese could I have started with?
+(A) 2 (B) 3 (C) 4 (D) 5 (E) 6
+*Diagram description: A cluster of 12 small cubes arranged in a 3x2x2 rectangular prism shape.*
+
+**25.** A clockface can be divided with two straight lines into three regions so that the sum of the numbers in each region is the same. What is this sum?
+(A) 20 (B) 22 (C) 24 (D) 26 (E) 28
+*Diagram description: A standard circular clockface with numbers 1 through 12, with a single hand pointing at 12.*
+
+For questions 26 to 30, shade the answer as a whole number from 0 to 999 in the space provided on the answer sheet.
+Question 26 is 6 marks, question 27 is 7 marks, question 28 is 8 marks, question 29 is 9 marks and question 30 is 10 marks.
+
+**26.** In a three-digit number, one of the digits is 7 and the difference between any two of the digits is 4 or less. 
+What is the smallest this number could be?

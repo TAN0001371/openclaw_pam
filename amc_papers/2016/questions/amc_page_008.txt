@@ -1,0 +1,32 @@
+MP 3
+
+12. A circular piece of paper is folded in half twice and then a cut is made as shown.
+
+[Diagram description: There are three sequential steps shown using arrows. First, a full circle is shown with a vertical dashed line down the middle and a curved arrow indicating it is being folded in half. Second, a semicircle is shown with a vertical dashed line and a curved arrow indicating it is being folded in half again to form a quarter-circle. Third, a quarter-circle is shown with a dashed diagonal line near the pointed corner, and an icon of scissors positioned on that line, indicating where the cut is made.]
+
+When the piece of paper is unfolded, what shape is the hole in the centre?
+
+(A) A diamond shape.
+(B) A trapezoid shape.
+(C) A vertical rectangle.
+(D) An inverted triangle.
+(E) A four-pointed star.
+
+13. Phoebe put her hand in her pocket and pulled out 60 cents. How many different ways could this amount be made using 10c, 20c and 50c coins?
+
+(A) 2
+(B) 3
+(C) 4
+(D) 5
+(E) 6
+
+14. There are 5 red, 5 green and 5 yellow jelly beans in a jar.
+How many would you need to take out of the jar without looking to make sure that you have removed at least two of the same colour?
+
+[Diagram description: An image of a clear glass jar with a black lid containing several jelly beans.]
+
+(A) 3
+(B) 4
+(C) 5
+(D) 6
+(E) 7

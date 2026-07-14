@@ -1,0 +1,29 @@
+MP 7
+
+25. Jane and Tom each have $3.85 in coins, one of each Australian coin. 
+They each give some coins to Angus so that Tom has exactly twice as much money as Jane. 
+What is the smallest number of coins given to Angus?
+
+[Image Description: A diagram showing six circular/polygonal representations of Australian coins:
+- A small circle labeled "5 cents"
+- A circle labeled "10 cents"
+- A circle labeled "20 cents"
+- A heptagonal shape labeled "50 cents"
+- A circle labeled "1 dollar"
+- A circle labeled "2 dollars"]
+
+(A) 2 
+(B) 3 
+(C) 4 
+(D) 6 
+(E) 8
+
+***
+
+For questions 26 to 30, shade the answer as a whole number from 0 to 999 in the space provided on the answer sheet.
+Question 26 is 6 marks, question 27 is 7 marks, question 28 is 8 marks, question 29 is 9 marks and question 30 is 10 marks.
+
+***
+
+26. With some 3-digit numbers, the third digit is the sum of the first two digits. For example, with the number 213 we can add 1 and 2 to get 3, so the third digit is the sum of the first two digits. 
+How many 3-digit numbers are there where the third digit is the sum of the first two digits?

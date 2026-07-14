@@ -1,0 +1,13 @@
+Here is the summary of the mathematical content from the provided page, prepared for your tutoring materials:
+
+### Question 21: Sports Tournament Logic
+*   **Method:** This problem involves completing a logic grid for a sports league where every team played three games. Since the Eagles won all three games, the Hawks must have lost to them. Given the Falcons and Condors had no wins, their game against each other must have been a draw, and they must have lost their games against the Hawks. By deducing the results for the Hawks (two wins, one loss), we can determine their point total.
+*   **Final Answer:** (C)
+
+### Question 22: Path Counting on a Grid
+*   **Method:** This is a combinatorics problem involving counting paths from a starting point $P$ to an ending point $Q$. The solution uses an additive approach: the number of ways to reach a specific point is equal to the sum of the number of ways to reach the points immediately preceding it. By systematically calculating the number of paths to each intermediate layer (from $A/X$ to $B/Y$ to $C/Z$), you can determine the final total reaching $Q$.
+*   **Final Answer:** (D)
+
+### Question 23: Cyclic Permutations
+*   **Method:** This problem involves tracking the position of items in a column as they are cycled. By observing the pattern of movement over five consecutive moves, the goal is to determine how the sequence of discs has been rearranged compared to its starting state. 
+*   **Final Answer:** (Note: The provided image ends before the options for this question are visible, but the solution involves identifying the final order: **r, b, g, y, o**.)
