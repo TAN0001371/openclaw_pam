@@ -3,220 +3,264 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AMC Diagram Renderers — Prototype</title>
+<title>AMC Practice — Preview</title>
 <style>
-  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #f8f9fa; }
-  h1 { font-size: 1.5rem; margin-bottom: 8px; }
-  .section { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin: 20px 0; }
-  .section h2 { font-size: 1rem; color: #6b7280; margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 0.5px; }
-  .diagram { display: flex; justify-content: center; align-items: center; min-height: 120px; }
-  svg { max-width: 100%; }
-  .label { font-size: 0.8rem; color: #9ca3af; margin-top: 8px; text-align: center; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: #f3f4f6; min-height: 100vh; }
+  .header { background: white; border-bottom: 1px solid #e5e7eb; padding: 16px 24px; display: flex; align-items: center; gap: 12px; }
+  .header .icon { width: 40px; height: 40px; background: linear-gradient(135deg, #f97316, #ea580c); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+  .header h1 { font-size: 1.1rem; font-weight: 600; color: #111827; }
+  .header .badge { background: #fff7ed; color: #c2410c; font-size: 0.75rem; padding: 2px 10px; border-radius: 20px; border: 1px solid #fed7aa; }
+  .header .timer { margin-left: auto; font-size: 0.85rem; color: #6b7280; }
+  .container { max-width: 700px; margin: 24px auto; padding: 0 16px; }
+  .card { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 28px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .card .q-header { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+  .card .q-num { background: #fff7ed; color: #c2410c; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 6px; }
+  .card .q-marks { font-size: 0.75rem; color: #9ca3af; }
+  .card .q-topic { font-size: 0.75rem; color: #9ca3af; margin-left: auto; }
+  .card .q-body { font-size: 1rem; line-height: 1.6; color: #1f2937; margin-bottom: 20px; }
+  .diagram { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; margin-bottom: 20px; display: flex; justify-content: center; overflow-x: auto; }
+  .options { display: flex; flex-direction: column; gap: 8px; }
+  .option { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border: 2px solid #e5e7eb; border-radius: 10px; cursor: pointer; transition: all 0.15s; }
+  .option:hover { border-color: #f97316; background: #fff7ed; }
+  .option .letter { width: 32px; height: 32px; border-radius: 50%; background: #f3f4f6; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.85rem; color: #374151; flex-shrink: 0; }
+  .option .text { font-size: 0.95rem; color: #1f2937; }
+  .option.selected { border-color: #f97316; background: #fff7ed; }
+  .option.selected .letter { background: #f97316; color: white; }
+  .option.correct { border-color: #16a34a; background: #f0fdf4; }
+  .option.correct .letter { background: #16a34a; color: white; }
+  .answer { margin-top: 16px; padding: 14px 16px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; font-size: 0.9rem; color: #166534; display: none; }
+  .answer.show { display: block; }
+  .answer strong { color: #15803d; }
+  .footer { text-align: center; padding: 24px; }
+  .footer button { background: #f97316; color: white; border: none; padding: 12px 32px; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+  .footer button:hover { background: #ea580c; }
+  .footer .progress { font-size: 0.8rem; color: #9ca3af; margin-top: 8px; }
+  @media (max-width: 600px) { .card { padding: 20px; } }
 </style>
 </head>
 <body>
-<h1>🧮 AMC Diagram Renderers</h1>
-<p>Structured SVG renders — no AI images. Each diagram type maps to a <code>media_spec</code> in the content pack JSON.</p>
 
-<!-- 1. Symmetry Letters -->
-<div class="section">
-  <h2>1. Symmetry / Letter Shapes (Q5 style)</h2>
-  <p style="color:#6b7280;font-size:0.9rem">media_spec: { type: "symmetry_letters", letters: ["V","W","X","Y","Z"], show_lines: true }</p>
-  <div class="diagram" id="symmetry"></div>
+<div class="header">
+  <div class="icon">🧮</div>
+  <div>
+    <h1>AMC Maths Practice</h1>
+    <div style="display:flex;gap:6px;margin-top:2px">
+      <span class="badge">Middle Primary</span>
+      <span class="badge">Years 3–4</span>
+    </div>
+  </div>
+  <div class="timer">⏱ 8 min remaining</div>
 </div>
 
-<!-- 2. Circle of Chairs -->
-<div class="section">
-  <h2>2. Circle Arrangement (Q9 style)</h2>
-  <p style="color:#6b7280;font-size:0.9rem">media_spec: { type: "circle_arrangement", count: 10, labels: ["1".."10"], highlight: 9 }</p>
-  <div class="diagram" id="chairs"></div>
+<div class="container">
+
+  <!-- Q1: Symmetry -->
+  <div class="card">
+    <div class="q-header">
+      <span class="q-num">Q1</span>
+      <span class="q-marks">3 marks</span>
+      <span class="q-topic">Geometry & Symmetry</span>
+    </div>
+    <div class="q-body">Four of these shapes have one or more lines of symmetry. Which one does <strong>not</strong>?</div>
+    <div class="diagram" id="q1-diagram"></div>
+    <div class="options">
+      <div class="option" onclick="check(this, 'q1-answer', false)"><span class="letter">A</span><span class="text">V</span></div>
+      <div class="option" onclick="check(this, 'q1-answer', false)"><span class="letter">B</span><span class="text">W</span></div>
+      <div class="option" onclick="check(this, 'q1-answer', false)"><span class="letter">C</span><span class="text">X</span></div>
+      <div class="option" onclick="check(this, 'q1-answer', false)"><span class="letter">D</span><span class="text">Y</span></div>
+      <div class="option correct" data-correct="true" onclick="check(this, 'q1-answer', true)"><span class="letter">E</span><span class="text">Z</span></div>
+    </div>
+    <div class="answer" id="q1-answer"><strong>Answer: E (Z)</strong><br>The letter Z has rotational symmetry but no <em>line</em> of symmetry. V, W, X and Y each have at least one vertical line of symmetry (shown as dashed lines).</div>
+  </div>
+
+  <!-- Q2: Circle Chairs -->
+  <div class="card">
+    <div class="q-header">
+      <span class="q-num">Q2</span>
+      <span class="q-marks">3 marks</span>
+      <span class="q-topic">Logic & Problem Solving</span>
+    </div>
+    <div class="q-body">Ten chairs are equally spaced around a round table, numbered 1 to 10 in order.<br><strong>Which chair is opposite chair 9?</strong></div>
+    <div class="diagram" id="q2-diagram"></div>
+    <div class="options">
+      <div class="option" onclick="check(this, 'q2-answer', false)"><span class="letter">A</span><span class="text">1</span></div>
+      <div class="option" onclick="check(this, 'q2-answer', false)"><span class="letter">B</span><span class="text">2</span></div>
+      <div class="option" onclick="check(this, 'q2-answer', false)"><span class="letter">C</span><span class="text">3</span></div>
+      <div class="option correct" data-correct="true" onclick="check(this, 'q2-answer', true)"><span class="letter">D</span><span class="text">4</span></div>
+      <div class="option" onclick="check(this, 'q2-answer', false)"><span class="letter">E</span><span class="text">5</span></div>
+    </div>
+    <div class="answer" id="q2-answer"><strong>Answer: D (4)</strong><br>The opposite chair is 5 places forward and 5 places back. Counting backwards from chair 9: 8, 7, 6, 5, 4 — so chair 4 is opposite. Shown by the blue arrow.</div>
+  </div>
+
+  <!-- Q3: Matchstick Cubes -->
+  <div class="card">
+    <div class="q-header">
+      <span class="q-num">Q3</span>
+      <span class="q-marks">4 marks</span>
+      <span class="q-topic">Patterns & Sequences</span>
+    </div>
+    <div class="q-body">Sally uses matchsticks and clay blobs to make cubes in a row. The first cube uses 12 matchsticks. Each new cube shares a face and needs only 8 more.<br><br><strong>How many cubes can Sally make with exactly 60 matchsticks?</strong></div>
+    <div class="diagram" id="q3-diagram"></div>
+    <div class="options">
+      <div class="option" onclick="check(this, 'q3-answer', false)"><span class="letter">A</span><span class="text">5</span></div>
+      <div class="option" onclick="check(this, 'q3-answer', false)"><span class="letter">B</span><span class="text">6</span></div>
+      <div class="option correct" data-correct="true" onclick="check(this, 'q3-answer', true)"><span class="letter">C</span><span class="text">7</span></div>
+      <div class="option" onclick="check(this, 'q3-answer', false)"><span class="letter">D</span><span class="text">8</span></div>
+      <div class="option" onclick="check(this, 'q3-answer', false)"><span class="letter">E</span><span class="text">9</span></div>
+    </div>
+    <div class="answer" id="q3-answer"><strong>Answer: C (7 cubes)</strong><br>Formula: 12 + 8 × (n − 1) = 60<br>8 × (n − 1) = 48 → n − 1 = 6 → n = 7 cubes.</div>
+  </div>
+
+  <!-- Q4: Connected Circles -->
+  <div class="card">
+    <div class="q-header">
+      <span class="q-num">Q4</span>
+      <span class="q-marks">4 marks</span>
+      <span class="q-topic">Logic & Problem Solving</span>
+    </div>
+    <div class="q-body">Place the numbers 1 to 7 in the circles so each line of three adds to 12.<br><strong>Which number must go in the centre?</strong></div>
+    <div class="diagram" id="q4-diagram"></div>
+    <div class="options">
+      <div class="option" onclick="check(this, 'q4-answer', false)"><span class="letter">A</span><span class="text">7</span></div>
+      <div class="option" onclick="check(this, 'q4-answer', false)"><span class="letter">B</span><span class="text">6</span></div>
+      <div class="option" onclick="check(this, 'q4-answer', false)"><span class="letter">C</span><span class="text">5</span></div>
+      <div class="option correct" data-correct="true" onclick="check(this, 'q4-answer', true)"><span class="letter">D</span><span class="text">4</span></div>
+      <div class="option" onclick="check(this, 'q4-answer', false)"><span class="letter">E</span><span class="text">2</span></div>
+    </div>
+    <div class="answer" id="q4-answer"><strong>Answer: D (4)</strong><br>The number 4 appears in 3 of the 5 possible sums that equal 12 (7+4+1, 6+4+2, 5+4+3). Since the centre belongs to 3 lines, 4 must go there.</div>
+  </div>
+
+  <!-- Q5: Folded Paper -->
+  <div class="card">
+    <div class="q-header">
+      <span class="q-num">Q5</span>
+      <span class="q-marks">4 marks</span>
+      <span class="q-topic">Geometry & Symmetry</span>
+    </div>
+    <div class="q-body">A circular paper is folded in half twice, then a cut is made in the corner.<br><strong>When unfolded, what shape is the hole in the centre?</strong></div>
+    <div class="diagram" id="q5-diagram"></div>
+    <div class="options">
+      <div class="option correct" data-correct="true" onclick="check(this, 'q5-answer', true)"><span class="letter">A</span><span class="text">A diamond ◆</span></div>
+      <div class="option" onclick="check(this, 'q5-answer', false)"><span class="letter">B</span><span class="text">A square</span></div>
+      <div class="option" onclick="check(this, 'q5-answer', false)"><span class="letter">C</span><span class="text">A triangle</span></div>
+      <div class="option" onclick="check(this, 'q5-answer', false)"><span class="letter">D</span><span class="text">A star</span></div>
+      <div class="option" onclick="check(this, 'q5-answer', false)"><span class="letter">E</span><span class="text">A rectangle</span></div>
+    </div>
+    <div class="answer" id="q5-answer"><strong>Answer: A (A diamond)</strong><br>Each unfolding step reflects the cut through the fold line, creating a symmetrical diamond shape in the centre of the circle.</div>
+  </div>
+
 </div>
 
-<!-- 3. Folded Paper -->
-<div class="section">
-  <h2>3. Folded Paper (Q12 style)</h2>
-  <p style="color:#6b7280;font-size:0.9rem">media_spec: { type: "folded_paper", folds: 2, cut_position: "corner", result_shape: "diamond" }</p>
-  <div class="diagram" id="folded"></div>
-</div>
-
-<!-- 4. Tangram Grid -->
-<div class="section">
-  <h2>4. Tangram / Grid overlay (Q18 style)</h2>
-  <p style="color:#6b7280;font-size:0.9rem">media_spec: { type: "grid_overlay", grid: "4x4", shapes: [...tangram_pieces], highlight: "small_square" }</p>
-  <div class="diagram" id="tangram"></div>
-</div>
-
-<!-- 5. Matchstick Cubes -->
-<div class="section">
-  <h2>5. Matchstick Cubes (Q29 style)</h2>
-  <p style="color:#6b7280;font-size:0.9rem">media_spec: { type: "matchstick_cubes", count: 3, show_dots: true }</p>
-  <div class="diagram" id="cubes"></div>
-</div>
-
-<!-- 6. Connected Circles -->
-<div class="section">
-  <h2>6. Connected Circles / Star (Q20 style)</h2>
-  <p style="color:#6b7280;font-size:0.9rem">media_spec: { type: "connected_circles", positions: [{x,y}...], edges: [{from,to}...] }</p>
-  <div class="diagram" id="circles"></div>
+<div class="footer">
+  <button onclick="document.querySelectorAll('.answer').forEach(a=>a.classList.toggle('show'))">Reveal All Answers</button>
+  <div class="progress">5 of 30 questions · Quick Practice mode</div>
 </div>
 
 <script>
-// ─── 1. Symmetry Letters ───
+function check(el, answerId, isCorrect) {
+  // Clear all selected in this card
+  const card = el.closest('.card');
+  card.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  if (!isCorrect) el.classList.add('correct');
+  // Show answer
+  document.getElementById(answerId).classList.add('show');
+}
+
+// Q1: Symmetry Letters
 (function() {
   const letters = ["V","W","X","Y","Z"];
-  const hasSymmetry = [true, true, true, true, false];
-  const w = 500, h = 120, cellW = w / 5;
-  let svg = `<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg">`;
-  letters.forEach((l, i) => {
-    const cx = cellW * i + cellW/2;
-    svg += `<text x="${cx}" y="${h/2+12}" text-anchor="middle" font-size="48" font-family="Arial, sans-serif" font-weight="bold" fill="#1f2937">${l}</text>`;
-    if (hasSymmetry[i]) {
-      svg += `<line x1="${cx}" y1="${h*0.15}" x2="${cx}" y2="${h*0.85}" stroke="#ef4444" stroke-dasharray="6,3" stroke-width="1.5" opacity="0.6"/>`;
-    }
+  const sym = [true, true, true, true, false];
+  let s = `<svg width="520" height="100"><defs><style>text{font:bold 40px Arial,sans-serif;fill:#1f2937}line.sym{stroke:#ef4444;stroke-dasharray:5,3;stroke-width:1.5;opacity:.5}</style></defs>`;
+  const cw = 520/5;
+  letters.forEach((l,i) => {
+    const cx = cw*i+cw/2;
+    s += `<text x="${cx}" y="60" text-anchor="middle">${l}</text>`;
+    if (sym[i]) s += `<line x1="${cx}" y1="15" x2="${cx}" y2="85" class="sym"/>`;
   });
-  svg += `</svg>`;
-  document.getElementById('symmetry').innerHTML = svg;
+  s += `</svg>`;
+  document.getElementById('q1-diagram').innerHTML = s;
 })();
 
-// ─── 2. Circle of Chairs ───
+// Q2: Circle of Chairs
 (function() {
-  const n = 10, r = 100, cx = 200, cy = 110;
-  let svg = `<svg width="400" height="220" xmlns="http://www.w3.org/2000/svg">`;
-  svg += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#d1d5db" stroke-width="2"/>`;
-  for (let i = 0; i < n; i++) {
-    const angle = (i / n) * 2 * Math.PI - Math.PI / 2;
-    const x = cx + r * Math.cos(angle);
-    const y = cy + r * Math.sin(angle);
-    const num = i + 1;
-    const isHighlighted = num === 9;
-    svg += `<circle cx="${x}" cy="${y}" r="14" fill="${isHighlighted ? '#3b82f6' : '#f3f4f6'}" stroke="${isHighlighted ? '#2563eb' : '#d1d5db'}" stroke-width="2"/>`;
-    svg += `<text x="${x}" y="${y+4}" text-anchor="middle" font-size="11" font-weight="bold" fill="${isHighlighted ? 'white' : '#374151'}">${num}</text>`;
+  const n=10, r=90, cx=200, cy=100;
+  let s = `<svg width="400" height="200"><defs><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#3b82f6"/></marker></defs>`;
+  s += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#f9fafb" stroke="#d1d5db" stroke-width="2"/>`;
+  for (let i=0; i<n; i++) {
+    const a = (i/n)*2*Math.PI - Math.PI/2;
+    const x=cx+r*Math.cos(a), y=cy+r*Math.sin(a);
+    const is9=i===8, is4=i===3;
+    s += `<circle cx="${x}" cy="${y}" r="14" fill="${is9?'#3b82f6':is4?'#10b981':'white'}" stroke="${is9?'#2563eb':is4?'#059669':'#d1d5db'}" stroke-width="2"/>`;
+    s += `<text x="${x}" y="${y+4}" text-anchor="middle" font-size="11" font-weight="bold" fill="${is9||is4?'white':'#374151'}">${i+1}</text>`;
   }
-  // Arrow from 9 to 4
-  const a9 = (8 / n) * 2 * Math.PI - Math.PI / 2;
-  const a4 = (3 / n) * 2 * Math.PI - Math.PI / 2;
-  const x9 = cx + (r + 20) * Math.cos(a9), y9 = cy + (r + 20) * Math.sin(a9);
-  const x4 = cx + (r + 20) * Math.cos(a4), y4 = cy + (r + 20) * Math.sin(a4);
-  svg += `<path d="M${x9},${y9} Q${cx},${cy - r - 20} ${x4},${y4}" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow)"/>`;
-  svg += `<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#3b82f6"/></marker></defs>`;
-  svg += `</svg>`;
-  document.getElementById('chairs').innerHTML = svg;
+  const a9=(8/10)*2*Math.PI-Math.PI/2, a4=(3/10)*2*Math.PI-Math.PI/2;
+  s += `<path d="M${cx+(r+22)*Math.cos(a9)},${cy+(r+22)*Math.sin(a9)} Q${cx},${cy-r-12} ${cx+(r+22)*Math.cos(a4)},${cy+(r+22)*Math.sin(a4)}" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr)"/>`;
+  s += `</svg>`;
+  document.getElementById('q2-diagram').innerHTML = s;
 })();
 
-// ─── 3. Folded Paper ───
+// Q3: Matchstick Cubes
 (function() {
-  let svg = `<svg width="500" height="160" xmlns="http://www.w3.org/2000/svg">`;
-  // Step 1: Full circle
-  svg += `<circle cx="80" cy="80" r="45" fill="none" stroke="#374151" stroke-width="2"/>`;
-  svg += `<line x1="80" y1="35" x2="80" y2="125" stroke="#9ca3af" stroke-dasharray="4,4" stroke-width="1"/>`;
-  svg += `<text x="80" y="145" text-anchor="middle" font-size="11" fill="#6b7280">Step 1: Fold in half</text>`;
-  // Arrow 1
-  svg += `<path d="M130,80 L160,80" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow2)"/>`;
-  // Step 2: Semicircle
-  svg += `<path d="M190,125 A45,45 0 0,1 190,35" fill="none" stroke="#374151" stroke-width="2"/>`;
-  svg += `<line x1="190" y1="35" x2="190" y2="125" stroke="#374151" stroke-width="2"/>`;
-  svg += `<line x1="190" y1="80" x2="150" y2="80" stroke="#9ca3af" stroke-dasharray="4,4" stroke-width="1"/>`;
-  svg += `<text x="170" y="145" text-anchor="middle" font-size="11" fill="#6b7280">Step 2: Fold again</text>`;
-  // Arrow 2
-  svg += `<path d="M250,80 L280,80" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow2)"/>`;
-  // Step 3: Quarter circle with cut
-  svg += `<path d="M330,125 A45,45 0 0,1 330,35" fill="none" stroke="#374151" stroke-width="2"/>`;
-  svg += `<line x1="330" y1="35" x2="375" y2="35" stroke="#374151" stroke-width="2"/>`;
-  svg += `<line x1="345" y1="50" x2="360" y2="65" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="3,2"/>`;
-  // Scissors icon
-  svg += `<text x="370" y="55" font-size="16">✂️</text>`;
-  svg += `<text x="352" y="145" text-anchor="middle" font-size="11" fill="#6b7280">Step 3: Cut corner</text>`;
-  // Arrow 3
-  svg += `<path d="M390,80 L420,80" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow2)"/>`;
-  // Result: Diamond hole
-  svg += `<circle cx="470" cy="80" r="40" fill="#f3f4f6" stroke="#374151" stroke-width="2"/>`;
-  svg += `<polygon points="470,55 485,80 470,105 455,80" fill="white" stroke="#ef4444" stroke-width="2"/>`;
-  svg += `<text x="470" y="135" text-anchor="middle" font-size="11" fill="#6b7280">Result: Diamond hole</text>`;
-  svg += `<defs><marker id="arrow2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#6b7280"/></marker></defs>`;
-  svg += `</svg>`;
-  document.getElementById('folded').innerHTML = svg;
-})();
-
-// ─── 4. Tangram Grid ───
-(function() {
-  let svg = `<svg width="280" height="280" xmlns="http://www.w3.org/2000/svg">`;
-  const size = 240, gs = size / 4, ox = 20, oy = 20;
-  // Grid
-  for (let i = 0; i <= 4; i++) {
-    svg += `<line x1="${ox}" y1="${oy + i*gs}" x2="${ox + size}" y2="${oy + i*gs}" stroke="#e5e7eb" stroke-width="1"/>`;
-    svg += `<line x1="${ox + i*gs}" y1="${oy}" x2="${ox + i*gs}" y2="${oy + size}" stroke="#e5e7eb" stroke-width="1"/>`;
+  let s = `<svg width="400" height="150">`;
+  function cube(x,y,sz) {
+    s += `<rect x="${x}" y="${y}" width="${sz}" height="${sz}" fill="none" stroke="#374151" stroke-width="1.8"/>`;
+    s += `<path d="M${x+sz},${y} L${x+sz+sz*.35},${y-sz*.35} L${x+sz+sz*.35},${y+sz-sz*.35} L${x+sz},${y+sz}" fill="none" stroke="#374151" stroke-width="1.8"/>`;
+    s += `<path d="M${x},${y} L${x+sz*.35},${y-sz*.35} L${x+sz+sz*.35},${y-sz*.35} L${x+sz},${y}" fill="none" stroke="#374151" stroke-width="1.8"/>`;
   }
-  // Tangram outline (square)
-  svg += `<rect x="${ox}" y="${oy}" width="${size}" height="${size}" fill="none" stroke="#374151" stroke-width="2"/>`;
-  // Highlight shaded small square (top-right quadrant, center)
-  const sqx = ox + gs, sqy = oy + gs;
-  svg += `<rect x="${sqx}" y="${sqy}" width="${gs}" height="${gs}" fill="#fbbf24" fill-opacity="0.4" stroke="#d97706" stroke-width="1.5"/>`;
-  // Tangent lines for tangram pieces (simplified)
-  svg += `<line x1="${ox}" y1="${oy}" x2="${ox+size}" y2="${oy+size}" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,2"/>`;
-  svg += `<line x1="${ox+size}" y1="${oy}" x2="${ox}" y2="${oy+size}" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,2"/>`;
-  svg += `</svg>`;
-  document.getElementById('tangram').innerHTML = svg;
+  for (let i=0; i<3; i++) cube(20+i*75, 45, 55);
+  s += `<text x="255" y="80" font-size="20" fill="#9ca3af">⋯</text>`;
+  // Corner dots
+  [[20,45],[75,45],[20,100],[75,100],[95,45],[150,45],[95,100],[150,100],[170,45],[225,45],[170,100],[225,100]].forEach(([x,y]) => s+=`<circle cx="${x}" cy="${y}" r="2.5" fill="#f97316"/>`);
+  s += `</svg>`;
+  document.getElementById('q3-diagram').innerHTML = s;
 })();
 
-// ─── 5. Matchstick Cubes ───
+// Q4: Connected Circles
 (function() {
-  let svg = `<svg width="420" height="160" xmlns="http://www.w3.org/2000/svg">`;
-  function drawCube(x, y, s) {
-    // Front face
-    svg += `<rect x="${x}" y="${y}" width="${s}" height="${s}" fill="none" stroke="#374151" stroke-width="2"/>`;
-    // Right face
-    svg += `<path d="M${x+s},${y} L${x+s+s*0.3},${y-s*0.3} L${x+s+s*0.3},${y+s-s*0.3} L${x+s},${y+s}" fill="none" stroke="#374151" stroke-width="2"/>`;
-    // Top face
-    svg += `<path d="M${x},${y} L${x+s*0.3},${y-s*0.3} L${x+s+s*0.3},${y-s*0.3} L${x+s},${y}" fill="none" stroke="#374151" stroke-width="2"/>`;
-    // Corner dots
-    const dots = [[x,y],[x+s,y],[x+s,y+s],[x,y+s],[x+s*0.3,y-s*0.3],[x+s+s*0.3,y-s*0.3],[x+s+s*0.3,y+s-s*0.3]];
-    dots.forEach(([dx,dy]) => {
-      svg += `<circle cx="${dx}" cy="${dy}" r="3" fill="#1f2937"/>`;
-    });
-  }
-  drawCube(20, 70, 60);
-  drawCube(100, 70, 60);
-  drawCube(180, 70, 60);
-  // Shared edges between cubes (the connecting matchsticks)
-  svg += `<text x="210" y="155" text-anchor="middle" font-size="11" fill="#6b7280">⋯</text>`;
-  svg += `</svg>`;
-  document.getElementById('cubes').innerHTML = svg;
-})();
-
-// ─── 6. Connected Circles ───
-(function() {
-  let svg = `<svg width="240" height="240" xmlns="http://www.w3.org/2000/svg">`;
-  // Positions: top row (3), middle (1), bottom row (3)
-  const positions = [
-    {x: 40, y: 40},  {x: 120, y: 40}, {x: 200, y: 40},  // top
-    {x: 120, y: 120},                                      // center
-    {x: 40, y: 200}, {x: 120, y: 200}, {x: 200, y: 200}, // bottom
-  ];
-  // Edges
-  const edges = [
-    [0,1],[1,2],[4,5],[5,6],  // horizontal
-    [0,3],[1,3],[2,3],        // top → center
-    [3,4],[3,5],[3,6],        // center → bottom
-  ];
-  // Draw edges
-  edges.forEach(([a,b]) => {
-    svg += `<line x1="${positions[a].x}" y1="${positions[a].y}" x2="${positions[b].x}" y2="${positions[b].y}" stroke="#d1d5db" stroke-width="2"/>`;
+  const p=[{x:50,y:50},{x:130,y:50},{x:210,y:50},{x:130,y:130},{x:50,y:210},{x:130,y:210},{x:210,y:210}];
+  const e=[[0,1],[1,2],[4,5],[5,6],[0,3],[1,3],[2,3],[3,4],[3,5],[3,6]];
+  let s=`<svg width="260" height="260">`;
+  e.forEach(([a,b])=>s+=`<line x1="${p[a].x}" y1="${p[a].y}" x2="${p[b].x}" y2="${p[b].y}" stroke="#d1d5db" stroke-width="2"/>`);
+  p.forEach((pt,i)=>{
+    const c=i===3;
+    s+=`<circle cx="${pt.x}" cy="${pt.y}" r="${c?22:18}" fill="white" stroke="${c?'#f97316':'#d1d5db'}" stroke-width="${c?2.5:2}"/>`;
+    if(c) s+=`<text x="${pt.x}" y="${pt.y+5}" text-anchor="middle" font-size="16" font-weight="bold" fill="#c2410c">?</text>`;
   });
-  // Draw circles
-  positions.forEach((p, i) => {
-    const isCenter = i === 3;
-    svg += `<circle cx="${p.x}" cy="${p.y}" r="${isCenter ? 20 : 18}" fill="white" stroke="${isCenter ? '#3b82f6' : '#d1d5db'}" stroke-width="${isCenter ? 2.5 : 2}"/>`;
-    if (isCenter) {
-      svg += `<text x="${p.x}" y="${p.y+5}" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">?</text>`;
-    }
-  });
-  svg += `</svg>`;
-  document.getElementById('circles').innerHTML = svg;
+  s+=`</svg>`;
+  document.getElementById('q4-diagram').innerHTML = s;
+})();
+
+// Q5: Folded Paper
+(function() {
+  let s=`<svg width="620" height="150">`;
+  function arrow(x1,y1,x2,y2){return `<path d="M${x1},${y1} L${x2},${y2}" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#a2)"/>`}
+  s+=`<defs><marker id="a2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#9ca3af"/></marker></defs>`;
+  s+=`<circle cx="55" cy="75" r="45" fill="none" stroke="#374151" stroke-width="2"/>`;
+  s+=`<line x1="55" y1="30" x2="55" y2="120" stroke="#9ca3af" stroke-dasharray="4,4" stroke-width="1"/>`;
+  s+=`<text x="55" y="140" text-anchor="middle" font-size="10" fill="#6b7280">Fold in half</text>`;
+  s+=arrow(105,75,130,75);
+  s+=`<path d="M160,120 A45,45 0 0,1 160,30" fill="none" stroke="#374151" stroke-width="2"/>`;
+  s+=`<line x1="160" y1="30" x2="160" y2="120" stroke="#374151" stroke-width="2"/>`;
+  s+=`<line x1="160" y1="75" x2="125" y2="75" stroke="#9ca3af" stroke-dasharray="4,4" stroke-width="1"/>`;
+  s+=`<text x="142" y="140" text-anchor="middle" font-size="10" fill="#6b7280">Fold again</text>`;
+  s+=arrow(215,75,240,75);
+  s+=`<path d="M270,120 A45,45 0 0,1 270,30" fill="none" stroke="#374151" stroke-width="2"/>`;
+  s+=`<line x1="270" y1="30" x2="315" y2="30" stroke="#374151" stroke-width="2"/>`;
+  s+=`<line x1="285" y1="45" x2="300" y2="60" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>`;
+  s+=`<text x="325" y="55" font-size="18">✂️</text>`;
+  s+=`<text x="292" y="140" text-anchor="middle" font-size="10" fill="#6b7280">Make a cut</text>`;
+  s+=arrow(330,75,355,75);
+  s+=`<circle cx="435" cy="75" r="40" fill="#f3f4f6" stroke="#374151" stroke-width="2"/>`;
+  s+=`<polygon points="435,52 452,75 435,98 418,75" fill="white" stroke="#ef4444" stroke-width="2"/>`;
+  s+=`<text x="435" y="132" text-anchor="middle" font-size="10" fill="#6b7280">Result: ◆</text>`;
+  s+=arrow(480,75,505,75);
+  s+=`<polygon points="540,60 560,75 540,90 520,75" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>`;
+  s+=`</svg>`;
+  document.getElementById('q5-diagram').innerHTML = s;
 })();
 </script>
 
-<p style="text-align:center;color:#9ca3af;margin-top:40px;font-size:0.85rem">
-  Each render is ~20 lines of SVG. Generator outputs structured <code>media_spec</code> → frontend renders SVG. No AI image generation needed.
-</p>
 </body>
 </html>
