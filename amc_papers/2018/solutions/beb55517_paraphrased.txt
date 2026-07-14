@@ -1,0 +1,17 @@
+[PARAPHRASED] Here are the paraphrased solutions extracted from the page:
+
+**Question 24**
+*   **Method:** Systematically calculate the remaining coins after each person takes their share: first 1/4 of 20 (5 coins), then 1/3 of the remaining 15 (5 coins), leaving 10 coins to be split equally between the final two people.
+*   **Answer:** (E)
+
+**Question 25**
+*   **Method:** Determine the width of the folded paper by observing that the final 20 cm edge is comprised of an 8 cm section plus four identical folded strip-widths. Subtracting 8 from 20 and dividing by 4 yields the width.
+*   **Answer:** (D)
+
+**Question 26**
+*   **Method:** Using the two given alternatives: either calculate the total score of all participants to deduce individual region values, or compare the combined scores of two pairs of people who each cover the same set of target regions to isolate the unknown score.
+*   **Answer:** 16
+
+**Question 27**
+*   **Method:** Find a number that is a multiple of both 3 and 11 (meaning it is a multiple of 33) such that subtracting 1 from that number results in a value divisible by 14. By testing odd multiples of 33, we identify the first three-digit number that satisfies the condition.
+*   **Answer:** 561
