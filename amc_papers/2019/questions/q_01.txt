@@ -1,0 +1,48 @@
+3
+
+10. Jake is playing a card game, and these are his cards.
+Elena chooses one card from Jake at random.
+Which of the following is Elena most likely to choose?
+(A) a heart (♥)
+(B) a diamond (♦)
+(C) a spade (♠)
+(D) a picture card (J, Q or K)
+(E) an even-numbered card
+
+[Diagram: A hand of 7 cards is shown: Ace of hearts, Jack of hearts, 4 of spades, 9 of clubs, 3 of clubs, King of clubs, 7 of clubs]
+
+---
+
+Questions 11 to 20, 4 marks each
+
+11. In Jacqui's puzzle, a number is put in each box.
+In each circle, the four numbers must add to 13.
+Which number goes in the top box?
+(A) 2
+(B) 3
+(C) 4
+(D) 5
+(E) 6
+
+[Diagram: Three overlapping circles. The center contains "1" and "3". The left circle contains "5", a blank box, and parts of the overlap. The right circle contains "7", a blank box, and parts of the overlap. The top circle contains a box with a "?" and a blank box.]
+
+---
+
+12. Noah follows the instructions in this flow chart. What number does he end with?
+
+[Diagram: A flow chart:
+- "Start with 8"
+- Arrow to "Subtract 5"
+- Arrow to "Multiply by 5"
+- Arrow to "Greater than 100?"
+- If "No", arrow loops back to "Subtract 5"
+- If "Yes", arrow to "End"]
+
+(A) 120
+(B) 150
+(C) 200
+(D) 225
+(E) 250
+
+---
+2019 AMC — Middle Primary

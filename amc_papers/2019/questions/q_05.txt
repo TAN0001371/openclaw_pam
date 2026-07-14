@@ -1,0 +1,20 @@
+25. Shirley has six pieces of her construction kit: two red, two blue and two green. She wants to build a square using four of the pieces.
+
+Shirley considers Square 1 below to be the same as Square 2, since the colours match once Square 2 is turned over and rotated. However she considers Square 3 to be different from Square 1, since no matter how it is turned, the two red sides are always opposite, and cannot match Square 1.
+
+[Diagram showing three squares, each made of 4 colored bars. Square 1 has Top: Blue, Bottom: Red, Left: Red, Right: Green. Square 2 has Top: Red, Bottom: Green, Left: Blue, Right: Red. Square 3 has Top: Red, Bottom: Red, Left: Blue, Right: Green.]
+
+How many different squares could she build?
+(A) 4 
+(B) 8 
+(C) 12 
+(D) 16 
+(E) 18
+
+For questions 26 to 30, shade the answer as a whole number from 0 to 999 in the space provided on the answer sheet. 
+Questions 26–30 are worth 6, 7, 8, 9 and 10 marks, respectively.
+
+26. At my local greengrocer, you take a ticket from the machine and wait until your number is called. The roll of tickets goes from 000 up to 999. When I was there last week with my neighbour, we took two tickets in a row and our two numbers added to 777.
+What was the next ticket number after ours?
+
+[Diagram of a ticket dispenser]

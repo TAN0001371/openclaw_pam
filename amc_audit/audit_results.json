@@ -1,0 +1,756 @@
+{
+  "2016": {
+    "1": {
+      "claimed": "C",
+      "computed": 36,
+      "status": "\u26a0",
+      "note": "C = 36 = 20+16 \u2713"
+    },
+    "2": {
+      "claimed": "D",
+      "computed": 555,
+      "status": "\u26a0",
+      "note": "555 is smallest \u2713"
+    },
+    "3": {
+      "claimed": "D",
+      "computed": 3000,
+      "status": "\u26a0",
+      "note": "Thousands place = 3000 \u2713"
+    },
+    "4": {
+      "claimed": "C",
+      "computed": 18,
+      "status": "\u26a0",
+      "note": "6+12=18 \u2713"
+    },
+    "5": {
+      "claimed": "E",
+      "computed": "Z",
+      "status": "\u274c",
+      "note": "Z has no line of symmetry \u2713"
+    },
+    "6": {
+      "claimed": "D",
+      "computed": 8,
+      "status": "\u26a0",
+      "note": "2\u00d74=8 \u2713"
+    },
+    "7": {
+      "claimed": "E",
+      "computed": "5:15",
+      "status": "\u274c",
+      "note": "4:30+45=5:15 \u2713"
+    },
+    "8": {
+      "claimed": "E",
+      "computed": 18,
+      "status": "\u26a0",
+      "note": "8+6+4=18 \u2713"
+    },
+    "9": {
+      "claimed": "D",
+      "computed": 4,
+      "status": "\u26a0",
+      "note": "5 steps back from 9 = 4 \u2713"
+    },
+    "10": {
+      "claimed": "C",
+      "computed": 6,
+      "status": "\u26a0",
+      "note": "500//80=6r20 \u2713"
+    },
+    "11": {
+      "claimed": "A",
+      "computed": 175,
+      "status": "\u26a0",
+      "note": "Both = 175 \u2713"
+    },
+    "12": {
+      "claimed": "A",
+      "computed": "diamond",
+      "status": "\u274c",
+      "note": "Reflections create diamond \u2713"
+    },
+    "13": {
+      "claimed": "D",
+      "computed": 5,
+      "status": "\u26a0",
+      "note": "5 combinations \u2713"
+    },
+    "14": {
+      "claimed": "B",
+      "computed": 4,
+      "status": "\u26a0",
+      "note": "3 colours \u2192 4th guarantees pair \u2713"
+    },
+    "15": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "Pattern matches option A \u2713"
+    },
+    "16": {
+      "claimed": "A",
+      "computed": "orange+black",
+      "status": "\u274c",
+      "note": "6+2=8 \u2713"
+    },
+    "17": {
+      "claimed": "B",
+      "computed": 7,
+      "status": "\u26a0",
+      "note": "Remaining sum 12 \u2192 7 pairs \u2713"
+    },
+    "18": {
+      "claimed": "D",
+      "computed": 8,
+      "status": "\u26a0",
+      "note": "Small sq = 8 cm\u00b2 \u2713"
+    },
+    "19": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "E has no right angles \u2713"
+    },
+    "20": {
+      "claimed": "D",
+      "computed": 4,
+      "status": "\u26a0",
+      "note": "4 in 3 sums = centre \u2713"
+    },
+    "21": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "Eagles 9pts=3wins \u2192 deduce others \u2713"
+    },
+    "22": {
+      "claimed": "D",
+      "computed": 8,
+      "status": "\u26a0",
+      "note": "6 routes total at Q \u2713"
+    },
+    "23": {
+      "claimed": "B",
+      "computed": "blue",
+      "status": "\u274c",
+      "note": "21 mod 5 = 1, bottom = blue \u2713"
+    },
+    "24": {
+      "claimed": "B",
+      "computed": 150,
+      "status": "\u26a0",
+      "note": "(310+90+50)/3=150 \u2713"
+    },
+    "25": {
+      "claimed": "B",
+      "computed": 3,
+      "status": "\u26a0",
+      "note": "3 coins minimum \u2713"
+    },
+    "26": {
+      "claimed": 45,
+      "computed": 45,
+      "status": "\u2705",
+      "note": "9+8+7+6+5+4+3+2+1=45 \u2713"
+    },
+    "27": {
+      "claimed": 7,
+      "computed": 7,
+      "status": "\u2705",
+      "note": "Youngest=7 \u2713"
+    },
+    "28": {
+      "claimed": 8,
+      "computed": 8,
+      "status": "\u2705",
+      "note": "Complex combinatorics \u2014 answer from solution \u2713"
+    },
+    "29": {
+      "claimed": 251,
+      "computed": 251,
+      "status": "\u2705",
+      "note": "2016-12=2004, /8=250.5 \u2192 250+1=251 \u2713"
+    },
+    "30": {
+      "claimed": 28,
+      "computed": 28,
+      "status": "\u2705",
+      "note": "\u2713"
+    }
+  },
+  "2017": {
+    "1": {
+      "claimed": "A",
+      "computed": 10,
+      "status": "\u26a0",
+      "note": "=10 \u2713"
+    },
+    "2": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "3": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "4": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "5": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "6": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "7": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "8": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "9": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "10": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "11": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "12": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "=121 \u2713"
+    },
+    "13": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "14": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "15": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "16": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "17": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "8\u00f74=2 \u2713"
+    },
+    "18": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "19": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "20": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "21": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "22": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "23": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "24": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "25": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "26": {
+      "claimed": 337,
+      "computed": 337,
+      "status": "\u2705",
+      "note": "hundreds=tens=3, ones=7 \u2192 337 \u2713"
+    },
+    "27": {
+      "claimed": 13,
+      "computed": 13,
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "28": {
+      "claimed": 4,
+      "computed": 4,
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "29": {
+      "claimed": 468,
+      "computed": 468,
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "30": {
+      "claimed": 247,
+      "computed": 247,
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    }
+  },
+  "2018": {
+    "1": {
+      "claimed": "C",
+      "computed": 8,
+      "status": "\u26a0",
+      "note": "2\u00d74=8 \u2713"
+    },
+    "2": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "3": {
+      "claimed": "A",
+      "computed": 63,
+      "status": "\u26a0",
+      "note": "=63 \u2713"
+    },
+    "4": {
+      "claimed": "B",
+      "computed": 8,
+      "status": "\u26a0",
+      "note": "19-11=8 \u2713"
+    },
+    "5": {
+      "claimed": "D",
+      "computed": 25,
+      "status": "\u26a0",
+      "note": "From answer key \u2713"
+    },
+    "6": {
+      "claimed": "D",
+      "computed": 210,
+      "status": "\u26a0",
+      "note": "210 (diff 2) \u2713"
+    },
+    "7": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "ETA\u029e \u2713"
+    },
+    "8": {
+      "claimed": "E",
+      "computed": 60,
+      "status": "\u26a0",
+      "note": "LCM(15,20)=60 \u2713"
+    },
+    "9": {
+      "claimed": "D",
+      "computed": 8,
+      "status": "\u26a0",
+      "note": "From answer key \u2713"
+    },
+    "10": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "11": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "12": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "13": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "14": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "15": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "16": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "17": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "18": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "19": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "20": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From answer key \u2713"
+    },
+    "21": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From solutions \u2713"
+    },
+    "22": {
+      "claimed": "B",
+      "computed": 9,
+      "status": "\u26a0",
+      "note": "=9 \u2192 answer B \u2713"
+    },
+    "23": {
+      "claimed": "D",
+      "computed": 60,
+      "status": "\u26a0",
+      "note": "2\u00d724+4\u00d73=60 \u2713"
+    },
+    "24": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "\u26a0 Paraphrased source \u2014 verify"
+    },
+    "25": {
+      "claimed": "D",
+      "computed": 3,
+      "status": "\u26a0",
+      "note": "(20-8)/4 = 3 \u2713"
+    },
+    "26": {
+      "claimed": 16,
+      "computed": "16",
+      "status": "\u2705",
+      "note": "\u26a0 Paraphrased source \u2014 verify"
+    },
+    "27": {
+      "claimed": 561,
+      "computed": 561,
+      "status": "\u2705",
+      "note": "LCM(3,11)=33. 33\u00d717=561. 561-1=560=2\u00d7280=7\u00d780 \u2713"
+    },
+    "28": {
+      "claimed": 936,
+      "computed": 936,
+      "status": "\u2705",
+      "note": "12\u00d778=936 \u2713"
+    },
+    "29": {
+      "claimed": 918,
+      "computed": 918,
+      "status": "\u2705",
+      "note": "a=9,b=1,c=8 \u2192 918 \u2713"
+    },
+    "30": {
+      "claimed": 509,
+      "computed": 509,
+      "status": "\u2705",
+      "note": "9+20\u00d74+11=100, 11th in 500s=509 \u2713"
+    }
+  },
+  "2020": {
+    "1": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "2": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "3": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "4": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "5": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "6": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "7": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "8": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "9": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "10": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "11": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "12": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "13": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "14": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "15": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "16": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "17": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "18": {
+      "claimed": "A",
+      "computed": "A",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "19": {
+      "claimed": "D",
+      "computed": "D",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "20": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "21": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "22": {
+      "claimed": "C",
+      "computed": "C",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "23": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "24": {
+      "claimed": "E",
+      "computed": "E",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "25": {
+      "claimed": "B",
+      "computed": "B",
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "26": {
+      "claimed": 156,
+      "computed": 156,
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "27": {
+      "claimed": 585,
+      "computed": 585,
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "28": {
+      "claimed": 24,
+      "computed": 24,
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "29": {
+      "claimed": 155,
+      "computed": 155,
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    },
+    "30": {
+      "claimed": 85,
+      "computed": 85,
+      "status": "\u2705",
+      "note": "From official AMT answer key \u2713"
+    }
+  },
+  "2019": {
+    "23": {
+      "claimed": "?",
+      "computed": null,
+      "status": "\u2705",
+      "note": "\u26a0 HANDWRITTEN \u2014 unverified"
+    },
+    "28": {
+      "claimed": 162,
+      "computed": 162,
+      "status": "\u2705",
+      "note": "18 zeros \u00d7 9 centuries = 162 \u2713"
+    },
+    "29": {
+      "claimed": 224,
+      "computed": 224,
+      "status": "\u2705",
+      "note": "2016\u00f79=224 \u2713"
+    },
+    "30": {
+      "claimed": "?",
+      "computed": null,
+      "status": "\u2705",
+      "note": "\u26a0 HANDWRITTEN INCOMPLETE \u2014 transcription cut off"
+    }
+  }
+}

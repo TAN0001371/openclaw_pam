@@ -1,0 +1,45 @@
+4
+
+13. On this number line, where would the number $\frac{1}{2}$ be?
+[Diagram: A number line starting at 0, ending at 2, with tick marks labeled A, B, C, D, E]
+(A) A
+(B) B
+(C) C
+(D) D
+(E) E
+
+14. When Bessie puts a mirror next to her calculator, the digits sometimes spell words in the mirror. Which number spells 'BESSIE' in the mirror?
+[Diagram: A calculator keypad and a reflection of digits in a mirror]
+(A) 315538
+(B) 835513
+(C) 832213
+(D) 815312
+(E) 312238
+
+15. Looking at this view of four dice, how many dots cannot be seen?
+[Diagram: Image of four standard six-sided dice showing various dot patterns]
+(A) 21
+(B) 28
+(C) 32
+(D) 36
+(E) 45
+
+16. A pencil costs 25 cents and a ruler costs 80 cents.
+With $5 I bought one ruler and as many pencils as I could afford.
+What change did I get?
+(A) 25 cents
+(B) 20 cents
+(C) 15 cents
+(D) 10 cents
+(E) 5 cents
+
+17. 27 identical cubes are used to make this $3 \times 3 \times 3$ cube.
+How many more are needed to make a $4 \times 4 \times 4$ cube?
+[Diagram: A drawing of a $3 \times 3 \times 3$ cube structure]
+(A) 1
+(B) 25
+(C) 27
+(D) 36
+(E) 37
+
+2019 AMC – Middle Primary

@@ -1,0 +1,18 @@
+**Page 8**
+
+27. There are 390 children at a summer camp.
+One-third of the number of girls is equal to one-half of the number of boys. How many girls are there?
+
+28. How many of the numbers from 100 to 999 have exactly one zero digit?
+
+29. A tower is built from exactly 2019 equal rods.
+Starting with 3 rods as a triangular base, more rods are added to form a regular octahedron with this base as one of its faces. The top face is then the base of the next octahedron.
+The diagram shows the construction of the first three octahedra.
+How many octahedra are in the tower when it is finished?
+
+[Diagram description: The diagram shows a sequence of construction steps starting with a single triangle, then one octahedron on the base, then two stacked octahedra, then three stacked octahedra.]
+
+30. John is one year older than his wife Mary. They have three children, whose ages are two years apart.
+The product of John and Mary’s ages is less than 2019. The product of the three children’s ages is also less than 2019.
+Next year both these products will be greater than 2020.
+This year, what is the sum of all five ages?

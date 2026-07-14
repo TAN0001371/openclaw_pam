@@ -1,0 +1,26 @@
+6
+
+20. It takes Preeti 30 minutes to walk to school.
+Sometimes she goes on her bike and she cycles twice as fast as she walks.
+Occasionally, her mother takes her in the car, which goes three times as fast as her bike. How many minutes does it take to get to school in the car?
+(A) 2 (B) 4 (C) 5 (D) 10 (E) 15
+
+Questions 21 to 25, 5 marks each
+
+21. In my dance class, 14 students are taller than Bob, and 12 are shorter than Alice. Four students are both shorter than Alice and taller than Bob. How many students are in my dance class?
+(A) 22 (B) 24 (C) 26 (D) 28 (E) 30
+
+22. My sister and I are playing a game where she picks two counting numbers and I have to guess them. When I tell her a number, she multiplies my number by her first number and then adds her second number.
+When I say 15, she says 50. When I say 2, she says 11.
+If I say 6, what should she say?
+(A) 23 (B) 27 (C) 35 (D) 41 (E) 61
+
+23. A year 6 student saved 100 cents in 5 days, each day saving 5 cents more than the previous day. How many cents did she save on the fifth day?
+(A) 20 cents (B) 25 cents (C) 30 cents (D) 40 cents (E) 50 cents
+
+24. A cube has the letters A, M, C, D, E and F on its six faces. Two different views of the cube are shown.
+[Diagram: Two images of a cube. Left cube shows faces C, D, A. Right cube shows faces F, A, E.]
+I place the cube on the table so that the front shows C. If I look at the back of the cube, what will I see?
+(A) D (B) E (C) F (D) M (E) A
+
+2019 AMC - Middle Primary

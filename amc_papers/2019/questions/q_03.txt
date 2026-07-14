@@ -1,0 +1,22 @@
+Page 5
+
+18. Meena has a $50 gift voucher to spend in a toyshop, but they won't give change from the voucher. Here is a short list of toys she would like. She tried to spend as much of the $50 as possible.
+
+[Image: A teddy bear ($24), a Rubik's cube ($14), a yo-yo ($6), and a toy car ($39)]
+
+If she buys no more than one of each toy, how much of the voucher will not get used?
+(A) $1 
+(B) $3 
+(C) $5 
+(D) $7 
+(E) $9
+
+19. A square piece of paper is folded twice along its diagonals, as shown in the diagram. Two corners are then cut off. When the paper is unfolded, what will it look like?
+
+[Image: Three-step diagram showing a square being folded into a triangle, then a smaller triangle, then being cut with scissors along the folded edge and the corner.]
+
+(A) [Image of a square with indented sides]
+(B) [Image of an octagon]
+(C) [Image of an octagon with a diamond cutout in the center]
+(D) [Image of a square with small cutouts on two opposite sides]
+(E) [Image of a square with indented sides and a square cutout in the center]
