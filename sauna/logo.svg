@@ -5,7 +5,7 @@
       <stop offset="50%" stop-color="#c48b4a"/>
       <stop offset="100%" stop-color="#8b5e3c"/>
     </linearGradient>
-    <linearGradient id="flameGrad" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="flameGrad" x1="0.5" y1="0" x2="0.5" y2="1">
       <stop offset="0%" stop-color="#d4a05a"/>
       <stop offset="40%" stop-color="#c48b4a"/>
       <stop offset="100%" stop-color="#7a4e2a"/>
@@ -49,41 +49,31 @@
   <circle cx="116" cy="117" r="1.2" fill="#8b5e3c" opacity="0.5"/>
   <circle cx="194" cy="263" r="1.2" fill="#8b5e3c" opacity="0.5"/>
 
-  <!-- Geometric flame: central diamond (flame core) -->
-  <polygon points="155,132 133,175 155,198 177,175" fill="url(#flameGrad)" opacity="0.95"/>
-  <!-- Left faceted wing -->
-  <polygon points="133,175 115,195 133,212 155,198" fill="#a0703a" opacity="0.7"/>
-  <!-- Right faceted wing -->
-  <polygon points="177,175 195,195 177,212 155,198" fill="#a0703a" opacity="0.7"/>
-  <!-- Upper highlight facet -->
-  <polygon points="155,132 143,150 155,158 167,150" fill="#d4a05a" opacity="0.45"/>
-  <!-- Lower shadow facet -->
-  <polygon points="155,198 143,210 155,220 167,210" fill="#8b5e3c" opacity="0.45"/>
+  <!-- Stylised geometric E mark (angular, faceted) -->
+  <!-- Top bar of E -->
+  <polygon points="125,152 185,152 185,158 140,158 140,174 178,174 178,180 140,180 140,196 185,196 185,202 125,202 125,152" fill="url(#flameGrad)" opacity="0.95"/>
+  <!-- E left vertical stroke highlight -->
+  <polygon points="125,152 140,158 140,196 125,202" fill="#d4a05a" opacity="0.3"/>
 
-  <!-- Flame crown tips -->
-  <polygon points="155,118 149,132 155,140 161,132" fill="#d4a05a" opacity="0.85"/>
-  <polygon points="140,128 135,138 143,150" fill="#c48b4a" opacity="0.35"/>
-  <polygon points="170,128 175,138 167,150" fill="#c48b4a" opacity="0.35"/>
+  <!-- Flame accent inside the E counter -->
+  <polygon points="155,145 148,160 155,168 162,160" fill="#d4a05a" opacity="0.6"/>
+  <polygon points="155,168 148,178 155,186 162,178" fill="#c48b4a" opacity="0.5"/>
+  <polygon points="155,186 150,192 155,198 160,192" fill="#8b5e3c" opacity="0.4"/>
 
-  <!-- Cedar grain lines behind flame -->
-  <line x1="155" y1="142" x2="155" y2="234" stroke="#c48b4a" stroke-width="0.4" opacity="0.15"/>
-  <line x1="140" y1="152" x2="140" y2="224" stroke="#c48b4a" stroke-width="0.3" opacity="0.10"/>
-  <line x1="170" y1="152" x2="170" y2="224" stroke="#c48b4a" stroke-width="0.3" opacity="0.10"/>
-  <line x1="125" y1="172" x2="125" y2="210" stroke="#c48b4a" stroke-width="0.3" opacity="0.08"/>
-  <line x1="185" y1="172" x2="185" y2="210" stroke="#c48b4a" stroke-width="0.3" opacity="0.08"/>
+  <!-- Cedar grain lines behind the E -->
+  <line x1="155" y1="148" x2="155" y2="216" stroke="#c48b4a" stroke-width="0.4" opacity="0.1"/>
+  <line x1="140" y1="158" x2="140" y2="210" stroke="#c48b4a" stroke-width="0.3" opacity="0.08"/>
+  <line x1="170" y1="158" x2="170" y2="210" stroke="#c48b4a" stroke-width="0.3" opacity="0.08"/>
 
   <!-- Vertical divider -->
   <line x1="270" y1="130" x2="270" y2="250" stroke="#c48b4a" stroke-width="0.6" opacity="0.25"/>
 
-  <!-- TEXT: brand name -->
-  <text x="285" y="168" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="400" letter-spacing="6" fill="#8b5e3c">MELBOURNE PRESTIGE</text>
-
-  <!-- TEXT: main wordmark -->
-  <text x="285" y="218" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="2" fill="#f5f0e8">SAUNA</text>
+  <!-- TEXT: brand name — ENDURE -->
+  <text x="285" y="215" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" letter-spacing="4" fill="#f5f0e8">ENDURE</text>
 
   <!-- Accent line -->
-  <line x1="285" y1="236" x2="440" y2="236" stroke="#c48b4a" stroke-width="0.8" opacity="0.6"/>
+  <line x1="285" y1="234" x2="525" y2="234" stroke="#c48b4a" stroke-width="0.8" opacity="0.6"/>
 
   <!-- TEXT: tagline -->
-  <text x="285" y="260" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" letter-spacing="4.5" fill="#c48b4a">CUSTOM CEDAR SAUNAS</text>
+  <text x="285" y="262" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" letter-spacing="5" fill="#c48b4a">CUSTOM MADE LUXURY</text>
 </svg>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Melbourne Prestige Sauna — custom cedar saunas built by hand in Melbourne. 100% bespoke, never a kit. Serving all Victoria.">
-  <title>Melbourne Prestige Sauna | Custom Cedar Saunas Victoria</title>
+  <meta name="description" content="Endure Saunas — custom cedar saunas built by hand in Melbourne. 100% bespoke, never a kit. Serving all Victoria.">
+  <title>Endure Saunas | Custom Cedar Saunas Victoria</title>
   <style>
     /* ============================================================
        CSS CUSTOM PROPERTIES
@@ -1047,6 +1047,93 @@
     }
 
     /* ============================================================
+       POPUP
+       ============================================================ */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.78);
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      padding: 1.5rem;
+    }
+    .popup-overlay.visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .popup-box {
+      background: var(--color-charcoal);
+      border: 1px solid rgba(196, 139, 74, 0.25);
+      border-radius: var(--radius);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      max-width: 520px;
+      width: 100%;
+      position: relative;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(196, 139, 74, 0.08);
+      transform: translateY(20px);
+      transition: transform 0.4s ease;
+    }
+    .popup-overlay.visible .popup-box {
+      transform: translateY(0);
+    }
+    .popup-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      color: var(--color-cream-dim);
+      background: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: color var(--transition), background var(--transition);
+      line-height: 1;
+    }
+    .popup-close:hover {
+      color: var(--color-white);
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .popup-box .popup-badge {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-wood);
+      border: 1px solid rgba(196, 139, 74, 0.3);
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+    }
+    .popup-box h2 {
+      font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+      color: var(--color-white);
+      margin-bottom: 1rem;
+    }
+    .popup-box p {
+      color: var(--color-cream-muted);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .popup-box .btn {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ============================================================
        FOOTER
        ============================================================ */
     .footer {
@@ -1258,6 +1345,13 @@
       .testimonial-card {
         padding: 1.5rem;
       }
+
+      .popup-box {
+        padding: 2rem 1.25rem;
+      }
+      .popup-box h2 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
@@ -1268,8 +1362,8 @@
        ============================================================ -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo" aria-label="Melbourne Prestige Sauna — Home">
-        <img src="logo.svg" alt="Melbourne Prestige Sauna">
+      <a href="#hero" class="nav-logo" aria-label="Endure Saunas — Home">
+        <img src="logo.svg" alt="Endure Saunas">
       </a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
@@ -1294,9 +1388,9 @@
   <section id="hero" class="hero">
     <div class="hero-content">
       <div class="hero-badge">Premium Custom Builds</div>
-      <h1>Custom Cedar Saunas.<br><em>Built Your Way.</em></h1>
+      <h1>Endure Saunas.<br><em>Custom Made Luxury.</em></h1>
       <p>
-        Melbourne Prestige Sauna. 100% bespoke. Never a kit. We design and hand-build
+        Endure Saunas. 100% bespoke. Never a kit. We design and hand-build
         every sauna from scratch — your space, your vision, your sauna.
       </p>
       <a href="#contact" class="btn btn-primary">Get a Quote</a>
@@ -1350,7 +1444,7 @@
             Generic. That's not what we do.
           </p>
           <p class="reveal">
-            Every <span class="highlight">Melbourne Prestige Sauna</span> is handmade right here in Victoria
+            Every <span class="highlight">Endure</span> sauna is handmade right here in Victoria
             using premium <span class="highlight">western red cedar</span> — selected for its natural resistance
             to moisture, its intoxicating aroma, and its unmistakable warmth. No particle board. No
             shortcuts. No two builds are the same, because no two clients are the same.
@@ -1368,7 +1462,7 @@
           </ul>
         </div>
         <div class="about-visual reveal reveal-d1">
-          <img src="img/a8e67e63-db67-48ee-8e63-55da82156a89.jpg" alt="Interior of a Melbourne Prestige cedar sauna showing warm timber tones and bench seating">
+          <img src="img/a8e67e63-db67-48ee-8e63-55da82156a89.jpg" alt="Interior of a Endure cedar sauna showing warm timber tones and bench seating">
         </div>
       </div>
     </div>
@@ -1383,7 +1477,7 @@
         <span class="section-label reveal">What We Build</span>
         <h2 class="reveal">Everything You Need. Nothing You Don't.</h2>
         <p class="reveal">
-          A Melbourne Prestige Sauna isn't just a hot room. It's a complete wellness space,
+          An Endure sauna isn't just a hot room. It's a complete wellness space,
           designed around how you'll actually use it.
         </p>
       </div>
@@ -1435,7 +1529,7 @@
       <div class="gallery-grid">
 
         <a href="#lightbox-1" class="gallery-item gallery-item-tall reveal reveal-d1">
-          <img src="img/a8e67e63-db67-48ee-8e63-55da82156a89.jpg" alt="Interior overview of a Melbourne Prestige cedar sauna with bench seating and warm lighting">
+          <img src="img/a8e67e63-db67-48ee-8e63-55da82156a89.jpg" alt="Interior overview of a Endure cedar sauna with bench seating and warm lighting">
         </a>
         <a href="#lightbox-2" class="gallery-item reveal reveal-d2">
           <img src="img/bb473c14-27f1-49cf-8441-93d3ea0e43b4.jpg" alt="Interior view showing cedar bench and timber detailing">
@@ -1459,7 +1553,7 @@
     <a href="#gallery" class="lightbox-close" aria-label="Close lightbox">&times;</a>
     <a href="#lightbox-5" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</a>
     <a href="#lightbox-2" class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</a>
-    <img class="lightbox-img" src="img/a8e67e63-db67-48ee-8e63-55da82156a89.jpg" alt="Interior overview of a Melbourne Prestige cedar sauna with bench seating and warm lighting">
+    <img class="lightbox-img" src="img/a8e67e63-db67-48ee-8e63-55da82156a89.jpg" alt="Interior overview of a Endure cedar sauna with bench seating and warm lighting">
     <p class="lightbox-caption">Interior overview — warm cedar, clean lines</p>
   </div>
   <div class="lightbox" id="lightbox-2">
@@ -1499,10 +1593,10 @@
       <span class="section-label reveal">Investment</span>
       <h2 class="reveal">What Does a Custom Sauna Cost?</h2>
       <div class="pricing-range reveal reveal-d1">
-        $40K <span>to</span> $70K
+        $20K <span>to</span> $40K
       </div>
       <p class="pricing-details reveal">
-        Every Melbourne Prestige Sauna is quoted individually. Your price depends on size,
+        Every Endure sauna is quoted individually. Your price depends on size,
         materials, site conditions, heating choice, and the level of finish you're after.
         That range covers the majority of builds we deliver — from compact backyard retreats
         to full-featured wellness pavilions. We'll give you a firm, transparent quote before
@@ -1618,7 +1712,7 @@
         <div class="testimonial-card reveal reveal-d2">
           <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <blockquote>
-            After researching sauna options for months, we chose Melbourne Prestige because nobody else offered this level of customisation. From the cedar selection to the LED lighting placement, every detail was our choice. Worth every cent.
+            After researching sauna options for months, we chose Endure because nobody else offered this level of customisation. From the cedar selection to the LED lighting placement, every detail was our choice. Worth every cent.
           </blockquote>
           <div class="testimonial-author">
             <strong>Michael R.</strong>
@@ -1664,7 +1758,7 @@
             <div class="icon">&#9993;</div>
             <div>
               <strong style="display:block;color:var(--color-wood);font-size:0.8rem;letter-spacing:0.06em;margin-bottom:0.15rem;">EMAIL</strong>
-              <a href="mailto:hello@melbourneprestigesauna.com.au">hello@melbourneprestigesauna.com.au</a>
+              <a href="mailto:hello@enduresaunas.com.au">hello@enduresaunas.com.au</a>
             </div>
           </div>
           <div class="contact-detail reveal">
@@ -1697,10 +1791,9 @@
                 <label for="budget">Budget Range</label>
                 <select id="budget" name="budget">
                   <option value="">Select range</option>
-                  <option value="30-50">$30K – $50K</option>
-                  <option value="50-70">$50K – $70K</option>
-                  <option value="70-100">$70K – $100K</option>
-                  <option value="100+">$100K+</option>
+                  <option value="20-30">$20K – $30K</option>
+                  <option value="30-40">$30K – $40K</option>
+                  <option value="40+">$40K+</option>
                   <option value="not-sure">Not sure yet</option>
                 </select>
               </div>
@@ -1721,14 +1814,30 @@
        ============================================================ -->
   <footer class="footer" role="contentinfo">
     <div class="footer-logo">
-      <img src="logo.svg" alt="Melbourne Prestige Sauna">
+      <img src="logo.svg" alt="Endure Saunas">
     </div>
-    <p class="footer-tagline">Custom Cedar Saunas. Built Your Way.</p>
-    <p><strong>Melbourne Prestige Sauna</strong></p>
+    <p class="footer-tagline">Endure Saunas. Custom Made Luxury.</p>
+    <p><strong>Endure Saunas</strong></p>
     <p>Serving Melbourne &amp; All Victoria — 0400 000 000</p>
     <div class="footer-divider"></div>
-    <p class="footer-legal">&copy; 2026 Melbourne Prestige Sauna. All rights reserved.</p>
+    <p class="footer-legal">&copy; 2026 Endure Saunas. All rights reserved.</p>
   </footer>
+
+  <!-- ============================================================
+       POPUP
+       ============================================================ -->
+  <div class="popup-overlay" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-heading">
+    <div class="popup-box">
+      <button class="popup-close" id="popup-close" aria-label="Close popup">&times;</button>
+      <div class="popup-badge">Limited Time</div>
+      <h2 id="popup-heading">Winter Bookings — Complimentary Accessories</h2>
+      <p>
+        Book your Endure sauna this July and receive a hand-crafted cedar bucket, ladle,
+        and premium sauna thermometer — included with your build.
+      </p>
+      <a href="#contact" class="btn btn-primary" id="popup-cta">Enquire Now</a>
+    </div>
+  </div>
 
   <!-- ============================================================
        INTERSECTION OBSERVER — SCROLL REVEAL
@@ -1749,6 +1858,36 @@
       document.querySelectorAll('.reveal').forEach(function(el) {
         observer.observe(el);
       });
+
+      /* Timed popup — 10s delay, once per session */
+      (function() {
+        var popup = document.getElementById('popup');
+        var closeBtn = document.getElementById('popup-close');
+        var ctaBtn = document.getElementById('popup-cta');
+
+        function hidePopup() {
+          popup.classList.remove('visible');
+          try { sessionStorage.setItem('endure_popup_shown', '1'); } catch(e) {}
+        }
+
+        if (!popup || !closeBtn) return;
+
+        try {
+          if (sessionStorage.getItem('endure_popup_shown')) return;
+        } catch(e) {}
+
+        setTimeout(function() {
+          popup.classList.add('visible');
+        }, 10000);
+
+        closeBtn.addEventListener('click', hidePopup);
+        popup.addEventListener('click', function(e) {
+          if (e.target === popup) hidePopup();
+        });
+        if (ctaBtn) {
+          ctaBtn.addEventListener('click', hidePopup);
+        }
+      })();
     })();
   </script>
 
