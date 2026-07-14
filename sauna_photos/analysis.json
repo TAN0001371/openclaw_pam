@@ -1,0 +1,30 @@
+{
+  "imgs/cd88aa8e": {
+    "subject": "heater",
+    "quality": "ok",
+    "use_for": "detail",
+    "notes": "The shot is well-centered but includes a distracting reflection in the stove glass and uneven exposure.",
+    "editing_needed": "crop"
+  },
+  "imgs/b0331afd": {
+    "subject": "interior",
+    "quality": "good",
+    "use_for": "gallery",
+    "notes": "The wide-angle perspective effectively captures the tiered bench layout and interior materials, though the vertical lines are slightly skewed.",
+    "editing_needed": "straighten"
+  },
+  "imgs/a8e67e63": {
+    "subject": "interior",
+    "quality": "ok",
+    "use_for": "gallery",
+    "notes": "The composition is clear, but construction debris visible through the glass door detracts from the professional aesthetic.",
+    "editing_needed": "crop"
+  },
+  "imgs/a3eff6dd": {
+    "subject": "interior",
+    "quality": "poor",
+    "use_for": "skip",
+    "notes": "The harsh work light and visible power strip/cords make the composition look unfinished and unprofessional.",
+    "editing_needed": "skip"
+  }
+}
