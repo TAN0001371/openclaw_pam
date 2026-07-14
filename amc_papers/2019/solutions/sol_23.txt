@@ -1,0 +1,28 @@
+AMC Middle Primary 2019 - Solutions
+
+23. 
+Suppose he saved on first day = x
+Second day = x + 5
+Third day = x + 10
+Fourth day = x + 15
+Fifth day = x + 20
+
+So
+x + (x + 5) + (x + 10) + (x + 15) + (x + 20) = 100
+5x + 50 = 100
+5x = 100 - 50
+x = 50 / 5 = 10
+
+So she saved 10 + 20 = 30¢ on fifth day. Hence (C)
+
+24. 
+[Diagram shows a cross-shaped net of a cube with the letters C, D, A, T, M]
+
+By referring to the picture, Net of cube will be like this.
+By placing cube on the table so that the front shows C, I will see M when I look at the back.
+Hence (D).
+
+25. 
+12
+[Diagram shows a grid of squares containing letters B, R, G in various patterns]
+Hence (C)

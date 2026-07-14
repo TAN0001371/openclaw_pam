@@ -1,0 +1,33 @@
+The provided image contains handwritten solutions for an Australian Mathematics Competition (AMC) paper, not the original exam questions. Below is the transcription of all text as requested:
+
+**Header:**
+Solutions – Middle Primary Division – 2019
+
+**List of solutions:**
+*   1. 12 + 6 = 18 ... hence (D)
+*   2. 410 ... hence (B)
+*   3. 3m = 3 × 100cm = 300cm as 1m = 100cm ... hence (C)
+*   4. (No. of children × 1) + 1 = 8
+    No. of children = 8 - 1
+    = 7
+    or
+    No. of peaches - 1 = No. of children
+    8 - 1 = No. of children
+    No. of children = 7 ... hence (C)
+*   5. Evan ... hence (E)
+*   6. 1089 + 1 = 1090 ... hence (A)
+*   7. A ♡ 4 ♡ 5 ♡ 3 ♡ 2 ♡ ... hence (B)
+*   8. Finn ... hence (C)
+*   9. 3 blocks east, 2 blocks north ... hence (D)
+*   10. As ♡ probability = 3/7 - A
+    ♣ probability = 2/7
+    ♢ probability = 0/7 - B
+    ♠ probability = 2/7 - C
+    Picture card J, Q, K = 2/7 - D
+    An even number card = 1/7 - E ... hence (A)
+
+**Other notes visible:**
+*   "Q. 11" is partially visible at the top right.
+*   "Q. 1" is partially visible at the middle right.
+
+*Note: There are no diagrams to describe, as the text is exclusively handwritten calculations and references to answers.*

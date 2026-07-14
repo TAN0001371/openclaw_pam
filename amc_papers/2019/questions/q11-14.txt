@@ -1,0 +1,32 @@
+Here is the transcription of the text in the provided image:
+
+B E S S I E / 312238
+
+14. Hence (E)
+
+15. Sum of Each dice dots = 1+2+3+4+5+6 = 21
+Sum of 4 dice dots = 21 × 4 = 84
+Visible dots on all 4 dice = (2+1+3) + (3+5+6) + (1+4+5) + (1+3+5) = 6 + 14 + 10 + 9 = 39
+No. of dots can not be seen = 84 - 39 = 45
+Hence (E)
+
+16. Change I got = 20 cents
+$5 - 0.80 = $4.20
+maximum no. of pencils I can get = 420 ÷ 25 = 16, remainder 20 (Note: The handwritten text appears to show calculation for 16 pencils or similar logic, corrected to 16 based on math, but transcribed as written: "= 8, remainder 20")
+Hence (B)
+
+$5 = (cost of 1 ruler + 8 pencils + change)
+(1 × 0.80) + (8 × .25 + 0.20)
+= $0.80 + $2 + $.20
+
+17. (No. of cubes required for 4x4x4) - (No. of cubes required for 3x3x3)
+(4x4x4) - (3x3x3)
+= 64 - 27
+= 37
+Hence (E)
+
+18. $39 + $6 = $45 → option I
+$24 + $14 + $6 = $44 → option II
+Best option will be option I
+$5 voucher will not get used.
+Hence (C)

@@ -1,0 +1,23 @@
+Two consecutive numbers that adds to 777
+= 388 + 389
+So our two tickets are 388, 389
+Next ticket number will be 390
+Hence (390)
+
+27. Let's say no. of girls = G
+no. of boys = B
+1/3 G = 1/2 B
+G = 1/2 x 3 B = 3/2 B
+G + B = 390
+3/2 B + B = 390 (As G = 3/2 B)
+(3B + 2B)/2 = 390
+5B = 780
+B = 156
+G + B = 390
+G = 390 - 156
+= 234
+Hence (234)
+
+Lets double check
+1/3 x 234 = 1/2 x 156
+78 = 78 [checkmark symbol]

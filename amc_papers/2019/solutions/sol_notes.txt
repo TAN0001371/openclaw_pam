@@ -1,0 +1,25 @@
+Based on the image provided, here is the transcription of the handwritten notes:
+
+**28**
+$100-199$ $\{101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 120, 130, 140, 150, 160, 170, 180, 190\} = 18$
+$200-299$
+$300-399$
+$400-499$
+$500-599$
+$600-699$
+$700-799$
+$800-899$
+$900-999$
+$18 \times 9 = 162$ Hence $(162)$
+
+**29**
+$2019 - 3 = 2016$ (take 3 used in base)
+$2016 \div 9 = 224$ (as each octahedron is made of 9 rods)
+So $224$ octahedra in tower. Hence $(224)$
+
+**30**
+John is one year older than Mary
+Product of John and Mary's age $< 2019 \rightarrow I$
+Product of 3 children who are 2 yrs apart $< 2019 \rightarrow II$
+Product of John and mary's age for next year $> 2020 \rightarrow III$
+Product of their 3 children's age for next year $> 2020 \rightarrow IV$

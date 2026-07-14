@@ -1,0 +1,25 @@
+Middle Primary Division
+
+Questions 1 to 10, 3 marks each
+
+1. How many eggs are in these cartons?
+(A) 12 (B) 15 (C) 16
+(D) 18 (E) 21
+
+2. Which one of the following is the largest number?
+(A) 401 (B) 410 (C) 14 (D) 140 (E) 44
+
+3. Which of the following is equal to 3 m?
+(A) 3 cm (B) 30 cm (C) 300 cm (D) 3000 cm (E) 36 cm
+
+4. A bowl has 8 peaches. After the children take one each, there is one peach left. How many children are there?
+(A) 5 (B) 6 (C) 7 (D) 8 (E) 9
+
+5. A Runnyball team has 5 players.
+This graph shows the number of goals each player scored in a tournament.
+Who scored the second-highest number of goals?
+(A) Ali (B) Beth (C) Caz (D) Dan (E) Evan
+
+[Graph Y-axis: Goals (0-8), X-axis: Player (Ali, Beth, Caz, Dan, Evan)]
+
+2019 AMC — Middle Primary
